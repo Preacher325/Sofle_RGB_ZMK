@@ -13,12 +13,6 @@
 &right_encoder { resolution = <2>; };
 
 / {
-    chosen {
-        zmk,underglow = &led_strip;
-    };
-};
-
-/ {
     macros {
         tm: tm {
             label = "TASK_MANAGER";
@@ -167,6 +161,9 @@
             tapping-term-ms = <200>;
             bindings = <&slp>, <&rst>, <&off>;
         };
+    };
+    chosen {
+        zmk,underglow = &led_strip;
     };
     keymap {
         compatible = "zmk,keymap";
