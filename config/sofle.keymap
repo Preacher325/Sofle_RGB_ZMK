@@ -13,9 +13,6 @@
 &right_encoder { resolution = <2>; };
 
 / {
-    chosen {
-        zmk,underglow = &led_strip;
-    };
     macros {
         tm: tm {
             label = "TASK_MANAGER";
