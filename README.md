@@ -11,7 +11,7 @@ Shields: Sofle RGB v2.1 PCB
 
 Boards: nice!nano v2.0
 
-Sockets: Jameco Valuepro 6100-1X14-R Single-in-Line Machine Tooled Strip Socket, 0.100" Pitch, 14 Pin, 0.160" Lead Length
+Sockets: Jameco Valuepro 6100-1X14-R Single-in-Line Strip Socket, 0.100" Pitch, 14 Pin, 0.160" Lead Length
 
 Batteries: 3.7V 850mAh LiPo
 
