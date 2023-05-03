@@ -87,6 +87,19 @@
                 = <&macro_tap &bt BT_SEL 2>
                 , <&macro_tap &rgb_ug RGB_COLOR_HSB(0,100,20)>;
         };
+        uc_dash: uc_dash {
+        label = "UNICODE_DASH";
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        tap-ms = <0>;
+        wait-ms = <0>;
+        bindings
+            = <&macro_press &kp LCTRL &kp LSHFT>
+            , <&macro_tap &kp U>
+            , <&macro_release &kp LCTRL &kp LSHFT>
+            , <&macro_tap &kp N2 &kp N0 &kp N1 &kp N4 &kp SPC>
+            ;
+        }; 
     };
 };
 
