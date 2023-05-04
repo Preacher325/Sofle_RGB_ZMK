@@ -95,7 +95,7 @@
         wait-ms = <40>;
         bindings
             = <&macro_press   &kp LALT>
-            , <&macro_tap     &kp KP_N0 &kp KP_N0 &kp E &kp KP_N1>
+            , <&macro_tap     &kp KP_N0 &kp KP_N6 &kp KP_N0>
             , <&macro_release &kp LALT>;
         }; 
     };
