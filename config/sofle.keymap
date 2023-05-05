@@ -165,6 +165,61 @@
             , <&macro_tap     &kp KP_N0 &kp KP_N1 &kp KP_N9 &kp KP_N3>
             , <&macro_release &kp LALT>;
         }; 
+        lfada_e: lfada_e {
+        label = "LARGE_FADA_E";
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        tap-ms = <0>;
+        wait-ms = <0>;
+        bindings
+            = <&macro_press   &kp LALT>
+            , <&macro_tap     &kp KP_N0 &kp KP_N2 &kp KP_N0 &kp KP_N1>
+            , <&macro_release &kp LALT>;
+        };
+        lfada_i: lfada_i {
+        label = "LARGE_FADA_I";
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        tap-ms = <0>;
+        wait-ms = <0>;
+        bindings
+            = <&macro_press   &kp LALT>
+            , <&macro_tap     &kp KP_N0 &kp KP_N2 &kp KP_N0 &kp KP_N5>
+            , <&macro_release &kp LALT>;
+        };
+        lfada_o: lfada_o {
+        label = "LARGE_FADA_O";
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        tap-ms = <0>;
+        wait-ms = <0>;
+        bindings
+            = <&macro_press   &kp LALT>
+            , <&macro_tap     &kp KP_N0 &kp KP_N2 &kp KP_N1 &kp KP_N1>
+            , <&macro_release &kp LALT>;
+        };
+        lfada_u: lfada_u {
+        label = "LARGE_FADA_U";
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        tap-ms = <0>;
+        wait-ms = <0>;
+        bindings
+            = <&macro_press   &kp LALT>
+            , <&macro_tap     &kp KP_N0 &kp KP_N2 &kp KP_N1 &kp KP_N8>
+            , <&macro_release &kp LALT>;
+        };
+        ltilden: ltilden {
+        label = "LARGE_TILDE_N";
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        tap-ms = <0>;
+        wait-ms = <0>;
+        bindings
+            = <&macro_press   &kp LALT>
+            , <&macro_tap     &kp KP_N0 &kp KP_N2 &kp KP_N0 &kp KP_N9>
+            , <&macro_release &kp LALT>;
+        };
 //Unicode Special Characters
 //Need regkey HKEY_CURRENT_USER\Control Panel\Input Method, REG_SZ EnableHexNumpad = 1
         schwa: schwa {
@@ -192,14 +247,47 @@
     };
 };
 
+//Combos, note that key listing is zero indexed
+//lshift: 36
+//rshift: 49
 / {
     combos {
         compatible = "zmk,combos";
         combo_cap_fada_a {
             timeout-ms = <100>;
             layers = <3>;
-            key-positions = <26 50>;
+            key-positions = <25 49>;
             bindings = <&lfada_a>;
+        };
+        combo_cap_fada_e {
+            timeout-ms = <100>;
+            layers = <3>;
+            key-positions = <15 49>;
+            bindings = <&lfada_e>;
+        };
+        combo_cap_fada_i {
+            timeout-ms = <100>;
+            layers = <3>;
+            key-positions = <20 36>;
+            bindings = <&lfada_i>;
+        };
+        combo_cap_fada_o {
+            timeout-ms = <100>;
+            layers = <3>;
+            key-positions = <21 36>;
+            bindings = <&lfada_o>;
+        };
+        combo_cap_fada_u {
+            timeout-ms = <100>;
+            layers = <3>;
+            key-positions = <19 36>;
+            bindings = <&lfada_u>;
+        };
+        combo_cap_tilde_n {
+            timeout-ms = <100>;
+            layers = <3>;
+            key-positions = <36 44>;
+            bindings = <&ltilden;
         };
     };
 };
