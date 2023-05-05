@@ -244,6 +244,17 @@
             , <&macro_tap     &kp KP_PLUS &kp KP_N0 &kp KP_N1 &kp KP_N4 &kp KP_N2>
             , <&macro_release &kp LALT>;
         };
+        ldarkl: ldarkl {
+        label = "LARGE_DARK_L";
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        tap-ms = <0>;
+        wait-ms = <0>;
+        bindings
+            = <&macro_press   &kp LALT>
+            , <&macro_tap     &kp KP_PLUS &kp KP_N0 &kp KP_N1 &kp KP_N4 &kp KP_N1>
+            , <&macro_release &kp LALT>;
+        };
     };
 };
 
@@ -254,40 +265,46 @@
     combos {
         compatible = "zmk,combos";
         combo_cap_fada_a {
-            timeout-ms = <100>;
+            timeout-ms = <200>;
             layers = <3>;
             key-positions = <25 49>;
             bindings = <&lfada_a>;
         };
         combo_cap_fada_e {
-            timeout-ms = <100>;
+            timeout-ms = <200>;
             layers = <3>;
             key-positions = <15 49>;
             bindings = <&lfada_e>;
         };
         combo_cap_fada_i {
-            timeout-ms = <100>;
+            timeout-ms = <200>;
             layers = <3>;
             key-positions = <20 36>;
             bindings = <&lfada_i>;
         };
         combo_cap_fada_o {
-            timeout-ms = <100>;
+            timeout-ms = <200>;
             layers = <3>;
             key-positions = <21 36>;
             bindings = <&lfada_o>;
         };
         combo_cap_fada_u {
-            timeout-ms = <100>;
+            timeout-ms = <200>;
             layers = <3>;
             key-positions = <19 36>;
             bindings = <&lfada_u>;
         };
         combo_cap_tilde_n {
-            timeout-ms = <100>;
+            timeout-ms = <200>;
             layers = <3>;
             key-positions = <36 44>;
             bindings = <&ltilden>;
+        };
+        combo_cap_dark_l {
+            timeout-ms = <200>;
+            layers = <3>;
+            key-positions = <33 44>;
+            bindings = <&ldarkl>;
         };
     };
 };
@@ -377,40 +394,19 @@
             tapping-term-ms = <200>;
             bindings = <&kp F5>, <&kp F8>;
         };
-        tdfla: tdfla {
+        td_ll_l3: td_ll_l3 {
             compatible = "zmk,behavior-tap-dance";
-            label = "TAP_DANCE_FADA_LITTLE_A";
+            label = "TAP_LOWER_LAYER_LAYER_3";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&kp EXCL>, <&smfada_a>;
+            bindings = <&mo 1>, <&mo 3>;
         };
-        tdfle: tdfle {
+        td_rl_l3: td_rl_l3 {
             compatible = "zmk,behavior-tap-dance";
-            label = "TAP_DANCE_FADA_LITTLE_E";
+            label = "TAP_RAISE_LAYER_LAYER_3";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&kp LT>, <&smfada_e>;
-        };
-        tdfli: tdfli {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TAP_DANCE_FADA_LITTLE_I";
-            #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&kp N7>, <&smfada_i>;
-        };
-        tdflo: tdflo {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TAP_DANCE_FADA_LITTLE_O";
-            #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&kp N8>, <&smfada_o>;
-        };
-        tdflu: tdflu {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TAP_DANCE_FADA_LITTLE_U";
-            #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&kp N9>, <&smfada_u>;
+            bindings = <&mo 2>, <&mo 3>;
         };
     };
     keymap {
@@ -424,11 +420,11 @@
 // | SHIFT |  Z  |  X  |  C   |  V   |  B   |  MUTE  |  |       |  N   |  M    |  ,    |  .   |   /   | SHIFT |
 //               | GUI | ALT  | CTRL | LOWER|  ENTER |  | SPACE | RAISE| CTRL  | ALT   | GUI  |
             bindings = <
-&kp ESC &kp N1 &kp N2   &kp N3   &kp N4    &kp N5                      &kp N6 &kp N7    &kp N8    &kp N9   &kp N0   &kp DEL
-&kp TAB &kp Q  &kp W    &kp E    &kp R     &kp T                       &kp Y  &kp U     &kp I     &kp O    &kp P    &kp BSPC
-&clcw   &kp A  &kp S    &kp D    &kp F     &kp G                       &kp H  &kp J     &kp K     &kp L    &kp SEMI &kp SQT
-&lscw   &kp Z  &kp X    &kp C    &kp V     &kp B  &kp C_MUTE &none     &kp N  &kp M     &kp COMMA &kp DOT  &kp FSLH &rscw
-               &kp LGUI &kp LALT &kp LCTRL &mo 1  &kp RET    &kp SPACE &mo 2  &kp RCTRL &kp RALT  &kp RGUI
+&kp ESC &kp N1 &kp N2   &kp N3   &kp N4    &kp N5                          &kp N6 &kp N7    &kp N8    &kp N9   &kp N0   &kp DEL
+&kp TAB &kp Q  &kp W    &kp E    &kp R     &kp T                           &kp Y  &kp U     &kp I     &kp O    &kp P    &kp BSPC
+&clcw   &kp A  &kp S    &kp D    &kp F     &kp G                           &kp H  &kp J     &kp K     &kp L    &kp SEMI &kp SQT
+&lscw   &kp Z  &kp X    &kp C    &kp V     &kp B      &kp C_MUTE &none     &kp N  &kp M     &kp COMMA &kp DOT  &kp FSLH &rscw
+               &kp LGUI &kp LALT &kp LCTRL &td_ll_l3  &kp RET    &kp SPACE &td_rl_l3  &kp RCTRL &kp RALT  &kp RGUI
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
