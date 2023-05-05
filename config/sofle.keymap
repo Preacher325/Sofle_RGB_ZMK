@@ -87,6 +87,7 @@
                 = <&macro_tap &bt BT_SEL 2>
                 , <&macro_tap &rgb_ug RGB_COLOR_HSB(0,100,20)>;
         };
+// Windows alt code Special Characters        
         smfada_a: smfada_a {
         label = "SMALL_FADA_A";
         compatible = "zmk,behavior-macro";
@@ -153,6 +154,19 @@
             , <&macro_tap     &kp KP_N0 &kp KP_N2 &kp KP_N4 &kp KP_N1>
             , <&macro_release &kp LALT>;
         };
+        lfada_a: lfada_a {
+        label = "LARGE_FADA_A";
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        tap-ms = <0>;
+        wait-ms = <0>;
+        bindings
+            = <&macro_press   &kp LALT>
+            , <&macro_tap     &kp KP_N0 &kp KP_N1 &kp KP_N9 &kp KP_N3>
+            , <&macro_release &kp LALT>;
+        }; 
+//Unicode Special Characters
+//Need regkey HKEY_CURRENT_USER\Control Panel\Input Method, REG_SZ EnableHexNumpad = 1
         schwa: schwa {
         label = "SCHWA";
         compatible = "zmk,behavior-macro";
@@ -174,6 +188,18 @@
             = <&macro_press   &kp LALT>
             , <&macro_tap     &kp KP_PLUS &kp KP_N0 &kp KP_N1 &kp KP_N4 &kp KP_N2>
             , <&macro_release &kp LALT>;
+        };
+    };
+};
+
+/ {
+    combos {
+        compatible = "zmk,combos";
+        combo_cap_fada_a {
+            timeout-ms = <100>;
+            layers = <3>;
+            key-positions = <26 50>;
+            bindings = <&lfada_a>;
         };
     };
 };
