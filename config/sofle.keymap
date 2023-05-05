@@ -303,7 +303,7 @@
         combo_cap_dark_l {
             timeout-ms = <200>;
             layers = <3>;
-            key-positions = <33 44>;
+            key-positions = <33 36>;
             bindings = <&ldarkl>;
         };
     };
