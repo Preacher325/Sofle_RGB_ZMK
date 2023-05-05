@@ -142,6 +142,17 @@
             , <&macro_tap     &kp KP_N0 &kp KP_N2 &kp KP_N5 &kp KP_N0>
             , <&macro_release &kp LALT>;
         };
+        tilden: tilden {
+        label = "TILDE_N";
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        tap-ms = <0>;
+        wait-ms = <0>;
+        bindings
+            = <&macro_press   &kp LALT>
+            , <&macro_tap     &kp KP_N0 &kp KP_N2 &kp KP_N4 &kp KP_N1>
+            , <&macro_release &kp LALT>;
+        };
         schwa: schwa {
         label = "SCHWA";
         compatible = "zmk,behavior-macro";
@@ -151,6 +162,17 @@
         bindings
             = <&macro_press   &kp LALT>
             , <&macro_tap     &kp KP_PLUS &kp KP_N0 &kp KP_N2 &kp KP_N5 &kp KP_N9>
+            , <&macro_release &kp LALT>;
+        };
+        darkl: darkl {
+        label = "DARK_L";
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        tap-ms = <0>;
+        wait-ms = <0>;
+        bindings
+            = <&macro_press   &kp LALT>
+            , <&macro_tap     &kp KP_PLUS &kp KP_N0 &kp KP_N1 &kp KP_N4 &kp KP_N2>
             , <&macro_release &kp LALT>;
         };
     };
@@ -339,14 +361,14 @@
 // ------------------------------------------------------------------------------------------------------------
 // |       |     |     |      |      |      |                   |      |       |       |      |       |       |
 // |       |     |     |  é   |      |      |                   |      |   ú   |   í   |   ó  |       |       |
-// |       |  á  |     |      |      |      |                   |      |       |       |      |       |       |
-// |       |     |     |      |      |      |        |  |       |      |       |       |      |       |       |
+// |       |  á  |     |      |      |      |                   |      |       |       |   ł  |       |       |
+// |       |     |     |      |      |      |        |  |       |  ñ   |       |       |      |       |       |
 //               |     |      |      |      |        |  |       |      |       |       |      |
             bindings = <
 &trans    &trans    &trans   &trans     &trans    &trans                           &trans    &trans    &trans    &trans      &trans    &trans
 &trans    &trans    &trans   &smfada_e  &trans    &trans                           &trans    &smfada_u &smfada_i &smfada_o   &trans    &trans
-&trans    &smfada_a &trans   &trans     &trans    &trans                           &trans    &trans    &trans    &trans      &trans    &trans
-&trans    &trans    &trans   &trans     &trans    &trans    &trans         &trans  &trans    &trans    &trans    &trans      &trans    &trans
+&trans    &smfada_a &trans   &trans     &trans    &trans                           &trans    &trans    &trans    &darkl      &trans    &trans
+&trans    &trans    &trans   &trans     &trans    &trans    &trans         &trans  &tilden   &trans    &trans    &trans      &trans    &trans
                     &trans   &trans     &trans    &trans    &trans         &trans  &trans    &trans    &trans    &trans
             >;
 
