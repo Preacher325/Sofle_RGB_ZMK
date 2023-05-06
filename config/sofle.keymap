@@ -220,8 +220,52 @@
             , <&macro_tap     &kp KP_N0 &kp KP_N2 &kp KP_N0 &kp KP_N9>
             , <&macro_release &kp LALT>;
         };
+        smlat_ae: smlat_ae {
+        label = "SMALL_LATIN_AE";
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        tap-ms = <0>;
+        wait-ms = <0>;
+        bindings
+            = <&macro_press   &kp LALT>
+            , <&macro_tap     &kp KP_N0 &kp KP_N2 &kp KP_N3 &kp KP_N0>
+            , <&macro_release &kp LALT>;
+        };
+        lglat_ae: lglat_ae {
+        label = "LARGE_LATIN_AE";
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        tap-ms = <0>;
+        wait-ms = <0>;
+        bindings
+            = <&macro_press   &kp LALT>
+            , <&macro_tap     &kp KP_N0 &kp KP_N1 &kp KP_N9 &kp KP_N8>
+            , <&macro_release &kp LALT>;
+        };
 //Unicode Special Characters
 //Need regkey HKEY_CURRENT_USER\Control Panel\Input Method, REG_SZ EnableHexNumpad = 1
+        us_cent: us_cent {
+        label = "US_CENT";
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        tap-ms = <0>;
+        wait-ms = <0>;
+        bindings
+            = <&macro_press   &kp LALT>
+            , <&macro_tap     &kp KP_PLUS &kp KP_N0 &kp KP_N0 &kp A &kp KP_N2>
+            , <&macro_release &kp LALT>;
+        };
+        uk_pnd: uk_pnd {
+        label = "UK_POUND";
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        tap-ms = <0>;
+        wait-ms = <0>;
+        bindings
+            = <&macro_press   &kp LALT>
+            , <&macro_tap     &kp KP_PLUS &kp KP_N0 &kp KP_N0 &kp A &kp KP_N3>
+            , <&macro_release &kp LALT>;
+        };
         schwa: schwa {
         label = "SCHWA";
         compatible = "zmk,behavior-macro";
@@ -476,7 +520,19 @@
             timeout-ms = <200>;
             layers = <3>;
             key-positions = <26 49>;
-            bindings = <&lacute_z>;
+            bindings = <&lacute_s>;
+        };
+        combo_sm_lat_ae {
+            timeout-ms = <200>;
+            layers = <3>;
+            key-positions = <15 25>;
+            bindings = <&smlat_ae>;
+        };
+        combo_lg_lat_ae {
+            timeout-ms = <200>;
+            layers = <3>;
+            key-positions = <15 25 49>;
+            bindings = <&lglat_ae>;
         };
     };
 };
@@ -669,16 +725,16 @@
         gaeilge_layer {
 // TODO: Some binds are waiting for shifted keycode support.
 // ------------------------------------------------------------------------------------------------------------
-// |       |     |     |      |      |      |                   |      |       |       |      |       |       |
+// |       |     |     |  £   |  ¢   |      |                   |      |       |       |      |       |       |
 // |       |     |     |  é   |      |      |                   |      |   ú   |   í   |   ó  |       |       |
 // |       |  á  |  ś  |      |      |      |                   |      |       |       |   ł  |       |       |
 // |       |  ź  |     |  ć   |      |      |        |  |       |  ń   |       |       |      |       |       |
 //               |     |      |      |      |        |  |       |      |       |       |      |
             bindings = <
-&trans    &trans     &trans     &trans     &trans    &trans                           &trans    &trans    &trans    &trans      &trans    &trans
-&trans    &trans     &trans     &smfada_e  &trans    &trans                           &trans    &smfada_u &smfada_i &smfada_o   &trans    &trans
+&trans    &trans     &trans     &uk_pnd    &us_cent  &trans                           &trans    &trans    &trans    &trans      &trans    &trans
+&trans    &trans     &trans     &td_sp_e   &trans    &trans                           &trans    &smfada_u &smfada_i &smfada_o   &trans    &trans
 &trans    &td_sp_a   &smacute_s &trans     &trans    &trans                           &trans    &trans    &trans    &darkl      &trans    &trans
-&trans    &td_sp_z   &trans     &smacute_c &trans    &trans    &trans         &trans  &tilden   &trans    &trans    &trans      &trans    &trans
+&trans    &td_sp_z   &trans     &smacute_c &trans    &trans    &trans         &trans  &td_sp_n  &trans    &trans    &trans      &trans    &trans
                      &trans     &trans     &trans    &trans    &trans         &trans  &trans    &trans    &trans    &trans
             >;
 
