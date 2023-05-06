@@ -299,6 +299,28 @@
             , <&macro_tap     &kp KP_PLUS &kp KP_N0 &kp KP_N1 &kp KP_N7 &kp KP_N9>
             , <&macro_release &kp LALT>;
         };
+        smdot_z: smdot_z {
+        label = "SMALL_DOT_Z";
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        tap-ms = <0>;
+        wait-ms = <0>;
+        bindings
+            = <&macro_press   &kp LALT>
+            , <&macro_tap     &kp KP_PLUS &kp KP_N0 &kp KP_N1 &kp KP_N7 &kp C>
+            , <&macro_release &kp LALT>;
+        };
+        ldot_z: ldot_z {
+        label = "LARGE_DOT_Z";
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        tap-ms = <0>;
+        wait-ms = <0>;
+        bindings
+            = <&macro_press   &kp LALT>
+            , <&macro_tap     &kp KP_PLUS &kp KP_N0 &kp KP_N1 &kp KP_N7 &kp B>
+            , <&macro_release &kp LALT>;
+        };
     };
 };
 
@@ -455,14 +477,21 @@
             label = "TAP_LOWER_LAYER_LAYER_3";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&mo 1>, <&mo 3>;
+            bindings = <&mo 1>, <&sl 3>;
         };
         td_rl_l3: td_rl_l3 {
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_RAISE_LAYER_LAYER_3";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&sl 2>, <&sl 3>;
+            bindings = <&mo 2>, <&sl 3>;
+        };
+        td_sp_z: td_sp_z {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_RAISE_LAYER_LAYER_3";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&smacute_z>, <&smdot_z>, <&ldot_z>;
         };
     };
     keymap {
@@ -534,7 +563,7 @@
 &trans    &trans     &trans   &trans     &trans    &trans                           &trans    &trans    &trans    &trans      &trans    &trans
 &trans    &trans     &trans   &smfada_e  &trans    &trans                           &trans    &smfada_u &smfada_i &smfada_o   &trans    &trans
 &trans    &smfada_a  &trans   &trans     &trans    &trans                           &trans    &trans    &trans    &darkl      &trans    &trans
-&trans    &smacute_z &trans   &smacute_c &trans    &trans    &trans         &trans  &tilden   &trans    &trans    &trans      &trans    &trans
+&trans    &td_sp_z   &trans   &smacute_c &trans    &trans    &trans         &trans  &tilden   &trans    &trans    &trans      &trans    &trans
                      &trans   &trans     &trans    &trans    &trans         &trans  &trans    &trans    &trans    &trans
             >;
 
