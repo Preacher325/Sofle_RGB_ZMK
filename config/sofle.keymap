@@ -488,7 +488,7 @@
         };
         td_sp_z: td_sp_z {
             compatible = "zmk,behavior-tap-dance";
-            label = "TAP_RAISE_LAYER_LAYER_3";
+            label = "TAP_SPECIAL_Z";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
             bindings = <&smacute_z>, <&smdot_z>, <&ldot_z>;
