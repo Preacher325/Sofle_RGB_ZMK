@@ -321,6 +321,94 @@
             , <&macro_tap     &kp KP_PLUS &kp KP_N0 &kp KP_N1 &kp KP_N7 &kp B>
             , <&macro_release &kp LALT>;
         };
+        smogo_a: smogo_a {
+        label = "SMALL_OGONEK_A";
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        tap-ms = <0>;
+        wait-ms = <0>;
+        bindings
+            = <&macro_press   &kp LALT>
+            , <&macro_tap     &kp KP_PLUS &kp KP_N0 &kp KP_N1 &kp KP_N0 &kp KP_N5>
+            , <&macro_release &kp LALT>;
+        };
+        logo_a: logo_a {
+        label = "LARGE_OGONEK_A";
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        tap-ms = <0>;
+        wait-ms = <0>;
+        bindings
+            = <&macro_press   &kp LALT>
+            , <&macro_tap     &kp KP_PLUS &kp KP_N0 &kp KP_N1 &kp KP_N0 &kp KP_N4>
+            , <&macro_release &kp LALT>;
+        };
+        smogo_e: smogo_e {
+        label = "SMALL_OGONEK_E";
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        tap-ms = <0>;
+        wait-ms = <0>;
+        bindings
+            = <&macro_press   &kp LALT>
+            , <&macro_tap     &kp KP_PLUS &kp KP_N0 &kp KP_N1 &kp KP_N1 &kp KP_N9>
+            , <&macro_release &kp LALT>;
+        };
+        logo_e: logo_e {
+        label = "LARGE_OGONEK_E";
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        tap-ms = <0>;
+        wait-ms = <0>;
+        bindings
+            = <&macro_press   &kp LALT>
+            , <&macro_tap     &kp KP_PLUS &kp KP_N0 &kp KP_N1 &kp KP_N1 &kp KP_N8>
+            , <&macro_release &kp LALT>;
+        };
+        smacute_n: smacute_n {
+        label = "SMALL_ACUTE_N";
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        tap-ms = <0>;
+        wait-ms = <0>;
+        bindings
+            = <&macro_press   &kp LALT>
+            , <&macro_tap     &kp KP_PLUS &kp KP_N0 &kp KP_N1 &kp KP_N4 &kp KP_N4>
+            , <&macro_release &kp LALT>;
+        };
+        lacute_n: lacute_n {
+        label = "LARGE_ACUTE_N";
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        tap-ms = <0>;
+        wait-ms = <0>;
+        bindings
+            = <&macro_press   &kp LALT>
+            , <&macro_tap     &kp KP_PLUS &kp KP_N0 &kp KP_N1 &kp KP_N4 &kp KP_N3>
+            , <&macro_release &kp LALT>;
+        };
+        smacute_s: smacute_s {
+        label = "SMALL_ACUTE_S";
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        tap-ms = <0>;
+        wait-ms = <0>;
+        bindings
+            = <&macro_press   &kp LALT>
+            , <&macro_tap     &kp KP_PLUS &kp KP_N0 &kp KP_N1 &kp KP_N5 &kp B>
+            , <&macro_release &kp LALT>;
+        };
+        lacute_s: lacute_s {
+        label = "LARGE_ACUTE_S";
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        tap-ms = <0>;
+        wait-ms = <0>;
+        bindings
+            = <&macro_press   &kp LALT>
+            , <&macro_tap     &kp KP_PLUS &kp KP_N0 &kp KP_N1 &kp KP_N5 &kp A>
+            , <&macro_release &kp LALT>;
+        };
     };
 };
 
@@ -360,11 +448,11 @@
             key-positions = <19 36>;
             bindings = <&lfada_u>;
         };
-        combo_cap_tilde_n {
+        combo_cap_acute_n {
             timeout-ms = <200>;
             layers = <3>;
             key-positions = <36 44>;
-            bindings = <&ltilden>;
+            bindings = <&lacute_n>;
         };
         combo_cap_dark_l {
             timeout-ms = <200>;
@@ -382,6 +470,12 @@
             timeout-ms = <200>;
             layers = <3>;
             key-positions = <37 49>;
+            bindings = <&lacute_z>;
+        };
+        combo_cap_acute_s {
+            timeout-ms = <200>;
+            layers = <3>;
+            key-positions = <26 49>;
             bindings = <&lacute_z>;
         };
     };
@@ -493,6 +587,27 @@
             tapping-term-ms = <200>;
             bindings = <&smacute_z>, <&smdot_z>, <&ldot_z>;
         };
+        td_sp_a: td_sp_a {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_SPECIAL_A";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&smfada_a>, <&smogo_a>, <&logo_a>;
+        };
+        td_sp_e: td_sp_e {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_SPECIAL_E";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&smfada_e>, <&smogo_e>, <&logo_e>;
+        };
+        td_sp_n: td_sp_n {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_SPECIAL_N";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&smacute_n>, <&tilden>, <&ltilden>;
+        };
     };
     keymap {
         compatible = "zmk,keymap";
@@ -556,15 +671,15 @@
 // ------------------------------------------------------------------------------------------------------------
 // |       |     |     |      |      |      |                   |      |       |       |      |       |       |
 // |       |     |     |  é   |      |      |                   |      |   ú   |   í   |   ó  |       |       |
-// |       |  á  |     |      |      |      |                   |      |       |       |   ł  |       |       |
-// |       |  ź  |     |  ć   |      |      |        |  |       |  ñ   |       |       |      |       |       |
+// |       |  á  |  ś  |      |      |      |                   |      |       |       |   ł  |       |       |
+// |       |  ź  |     |  ć   |      |      |        |  |       |  ń   |       |       |      |       |       |
 //               |     |      |      |      |        |  |       |      |       |       |      |
             bindings = <
-&trans    &trans     &trans   &trans     &trans    &trans                           &trans    &trans    &trans    &trans      &trans    &trans
-&trans    &trans     &trans   &smfada_e  &trans    &trans                           &trans    &smfada_u &smfada_i &smfada_o   &trans    &trans
-&trans    &smfada_a  &trans   &trans     &trans    &trans                           &trans    &trans    &trans    &darkl      &trans    &trans
-&trans    &td_sp_z   &trans   &smacute_c &trans    &trans    &trans         &trans  &tilden   &trans    &trans    &trans      &trans    &trans
-                     &trans   &trans     &trans    &trans    &trans         &trans  &trans    &trans    &trans    &trans
+&trans    &trans     &trans     &trans     &trans    &trans                           &trans    &trans    &trans    &trans      &trans    &trans
+&trans    &trans     &trans     &smfada_e  &trans    &trans                           &trans    &smfada_u &smfada_i &smfada_o   &trans    &trans
+&trans    &td_sp_a   &smacute_s &trans     &trans    &trans                           &trans    &trans    &trans    &darkl      &trans    &trans
+&trans    &td_sp_z   &trans     &smacute_c &trans    &trans    &trans         &trans  &tilden   &trans    &trans    &trans      &trans    &trans
+                     &trans     &trans     &trans    &trans    &trans         &trans  &trans    &trans    &trans    &trans
             >;
 
             sensor-bindings = <&inc_dec_kp PG_DN PG_UP &inc_dec_kp C_VOL_UP C_VOL_DN>;
