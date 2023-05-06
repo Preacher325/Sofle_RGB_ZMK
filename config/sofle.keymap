@@ -539,6 +539,12 @@
 
 / {
     behaviors {
+        rgb_encoder: rgb_encoder {
+            compatible = "zmk,behavior-sensor-rotate";
+            label = "RGB_ENCODER";
+            #sensor-binding-cells = <0>;
+            bindings = <&rgb_ug RGB_BRI>, <&rgb_ug RGB_BRD>;
+        };
         cc: cc {
             compatible = "zmk,behavior-tap-dance";
             label = "COLOR_CYCLE";
@@ -720,7 +726,7 @@
                     &trans    &trans      &trans    &mo 3     &pscode           &trans  &trans    &trans    &trans    &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp PG_DN PG_UP &inc_dec_kp C_VOL_UP C_VOL_DN>;
+            sensor-bindings = <&rgb_encoder>;
         };
         gaeilge_layer {
 // TODO: Some binds are waiting for shifted keycode support.
