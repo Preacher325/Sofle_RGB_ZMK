@@ -545,6 +545,12 @@
             #sensor-binding-cells = <0>;
             bindings = <&rgb_ug RGB_BRI>, <&rgb_ug RGB_BRD>;
         };
+        rgb_hue: rgb_hue {
+            compatible = "zmk,behavior-sensor-rotate";
+            label = "RGB_HUE";
+            #sensor-binding-cells = <0>;
+            bindings = <&rgb_ug RGB_HUI>, <&rgb_ug RGB_HUD>;
+        };
         cc: cc {
             compatible = "zmk,behavior-tap-dance";
             label = "COLOR_CYCLE";
@@ -726,7 +732,7 @@
                     &trans    &trans      &trans    &mo 3     &pscode           &trans  &trans    &trans    &trans    &trans
             >;
 
-            sensor-bindings = <&rgb_encoder>;
+            sensor-bindings = <&rgb_hue>;
         };
         gaeilge_layer {
 // TODO: Some binds are waiting for shifted keycode support.
@@ -744,7 +750,7 @@
                      &trans     &trans     &trans    &trans    &trans         &trans  &trans    &trans    &trans    &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp PG_DN PG_UP &inc_dec_kp C_VOL_UP C_VOL_DN>;
+            sensor-bindings = <&rgb_encoder>;
         };
     };
 };
