@@ -566,7 +566,7 @@
             compatible = "zmk,behavior-mod-morph";
             label = "RETURN_MENU";
             #binding-cells = <0>;
-            bindings = <&kp RET>, <&kp K_MENU>;
+            bindings = <&kp RET>, <&kp K_APPLICATION>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
         fada_a: fada_a {
