@@ -539,21 +539,21 @@
             label = "RGB_BRIGHTNESS_SATURATION_INCREASE";
             #binding-cells = <0>;
             bindings = <&rgb_ug RGB_SAI>, <&rgb_ug RGB_BRI>;
-            mods = <(MOD_LCTL|MOD_RCTL)>;
+            mods = <(MOD_LALT|MOD_RALT)>;
         };
         rgb_bri_sat_dec: rgb_bri_sat_dec {
             compatible = "zmk,behavior-mod-morph";
             label = "RGB_BRIGHTNESS_SATURATION_DECREASE";
             #binding-cells = <0>;
             bindings = <&rgb_ug RGB_SAD>, <&rgb_ug RGB_BRD>;
-            mods = <(MOD_LCTL|MOD_RCTL)>;
+            mods = <(MOD_LALT|MOD_RALT)>;
         };
         rgb_inc: rgb_inc {
             compatible = "zmk,behavior-mod-morph";
             label = "RGB_INCREASE";
             #binding-cells = <0>;
             bindings = <&rgb_ug RGB_HUI>, <&rgb_bri_sat_inc>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
+            mods = <(MOD_LSFT|MOD_RSFT|MOD_LCTL|MOD_RCTL)>;
         };
         rgb_dec: rgb_dec {
             compatible = "zmk,behavior-mod-morph";
