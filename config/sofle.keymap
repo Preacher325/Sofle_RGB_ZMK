@@ -551,6 +551,20 @@
             #sensor-binding-cells = <0>;
             bindings = <&rgb_ug RGB_HUI>, <&rgb_ug RGB_HUD>;
         };
+        fada_a: fada_a {
+            compatible = "zmk,behavior-mod-morph";
+            label = "FADA_A";
+            #binding-cells = <0>;
+            bindings = <&smfada_a>, <&lfada_a>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+        ogonek_a: ogonek_a {
+            compatible = "zmk,behavior-mod-morph";
+            label = "OGONEK_A";
+            #binding-cells = <0>;
+            bindings = <&smogo_a>, <&logo_a>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
         cc: cc {
             compatible = "zmk,behavior-tap-dance";
             label = "COLOR_CYCLE";
@@ -660,7 +674,7 @@
             label = "TAP_SPECIAL_A";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&smfada_a>, <&smogo_a>, <&logo_a>;
+            bindings = <&fada_a>, <&ogonek_a>;
         };
         td_sp_e: td_sp_e {
             compatible = "zmk,behavior-tap-dance";
