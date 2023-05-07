@@ -346,7 +346,7 @@
             , <&macro_tap     &kp KP_PLUS &kp KP_N0 &kp KP_N1 &kp KP_N0 &kp KP_N6>
             , <&macro_release &kp LALT>;
         };
-        smdarkl: smdarkl {
+        smdark_l: smdark_l {
         label = "SMALL_DARK_L";
         compatible = "zmk,behavior-macro";
         #binding-cells = <0>;
@@ -357,7 +357,7 @@
             , <&macro_tap     &kp KP_PLUS &kp KP_N0 &kp KP_N1 &kp KP_N4 &kp KP_N2>
             , <&macro_release &kp LALT>;
         };
-        ldarkl: ldarkl {
+        ldark_l: ldark_l {
         label = "LARGE_DARK_L";
         compatible = "zmk,behavior-macro";
         #binding-cells = <0>;
@@ -577,7 +577,7 @@
             compatible = "zmk,behavior-mod-morph";
             label = "DARK_L";
             #binding-cells = <0>;
-            bindings = <&smdark_l>, <&ldarkl>;
+            bindings = <&smdark_l>, <&ldark_l>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
         acute_n: acute_n {
