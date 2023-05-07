@@ -569,7 +569,6 @@
             bindings = <&kp RET>, <&kp K_MENU>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
-        ogo
         fada_a: fada_a {
             compatible = "zmk,behavior-mod-morph";
             label = "FADA_A";
