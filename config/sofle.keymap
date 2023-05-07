@@ -533,25 +533,19 @@
 
 / {
     behaviors {
-//Encoder
-        rgb_bright: rgb_bright {
-            compatible = "zmk,behavior-sensor-rotate";
-            label = "RGB_BRIGHTNESS";
-            #sensor-binding-cells = <0>;
-            bindings = <&rgb_ug RGB_BRI>, <&rgb_ug RGB_BRD>;
-        };
-        rgb_hue: rgb_hue {
-            compatible = "zmk,behavior-sensor-rotate";
-            label = "RGB_HUE";
-            #sensor-binding-cells = <0>;
-            bindings = <&rgb_ug RGB_HUI>, <&rgb_ug RGB_HUD>;
-        };
 //Mod Morph
-        rgb_encoder: rgb_encoder {
+        rgb_inc: rgb_inc {
             compatible = "zmk,behavior-mod-morph";
-            label = "RGB_ENCODER";
+            label = "RGB_INCREASE";
             #binding-cells = <0>;
-            bindings = <&rgb_hue>, <&rgb_bright>;
+            bindings = <&rgb_ug RGB_HUI>, <&rgb_ug RGB_BRI>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+        rgb_dec: rgb_dec {
+            compatible = "zmk,behavior-mod-morph";
+            label = "RGB_DECREASE";
+            #binding-cells = <0>;
+            bindings = <&rgb_ug RGB_HUD>, <&rgb_ug RGB_BRD>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
         fada_a: fada_a {
@@ -567,6 +561,13 @@
             #binding-cells = <0>;
             bindings = <&smogo_a>, <&logo_a>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+//Encoder
+        rgb_encoder: rgb_encoder {
+            compatible = "zmk,behavior-sensor-rotate";
+            label = "RGB_ENCODER";
+            #sensor-binding-cells = <0>;
+            bindings = <&rgb_inc>, <&rgb_dec>;
         };
 //Tap Dance
         cc: cc {
@@ -768,7 +769,7 @@
                      &trans     &trans     &trans    &trans    &trans         &trans  &trans    &trans    &trans    &trans
             >;
 
-            sensor-bindings = <&rgb_hue>;
+            sensor-bindings = <&inc_dec_kp PG_DN PG_UP &inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
     };
 };
