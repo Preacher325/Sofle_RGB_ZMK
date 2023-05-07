@@ -540,7 +540,7 @@
         };
         ogonek_e: ogonek_e {
             compatible = "zmk,behavior-mod-morph";
-            label = "OGONEK_A";
+            label = "OGONEK_E";
             #binding-cells = <0>;
             bindings = <&smogo_e>, <&logo_e>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
