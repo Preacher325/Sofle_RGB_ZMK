@@ -673,7 +673,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_SPECIAL_A";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <300>;
             bindings = <&fada_a>, <&ogonek_a>;
         };
         td_sp_e: td_sp_e {
