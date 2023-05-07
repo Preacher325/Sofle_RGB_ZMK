@@ -552,7 +552,7 @@
             label = "RGB_ENCODER";
             #binding-cells = <0>;
             bindings = <&rgb_hue>, <&rgb_bright>;
-            mods = <(MOD_LSFT|MOD_RSFT|MOD_LCTL|MOD_RCTL)>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
         };
         fada_a: fada_a {
             compatible = "zmk,behavior-mod-morph";
