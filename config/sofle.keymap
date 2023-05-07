@@ -462,12 +462,6 @@
 / {
     combos {
         compatible = "zmk,combos";
-        combo_cap_fada_a {
-            timeout-ms = <200>;
-            layers = <3>;
-            key-positions = <25 49>;
-            bindings = <&lfada_a>;
-        };
         combo_cap_fada_e {
             timeout-ms = <200>;
             layers = <3>;
@@ -539,9 +533,10 @@
 
 / {
     behaviors {
-        rgb_encoder: rgb_encoder {
+//Encoder
+        rgb_bright: rgb_bright {
             compatible = "zmk,behavior-sensor-rotate";
-            label = "RGB_ENCODER";
+            label = "RGB_BRIGHTNESS";
             #sensor-binding-cells = <0>;
             bindings = <&rgb_ug RGB_BRI>, <&rgb_ug RGB_BRD>;
         };
@@ -550,6 +545,14 @@
             label = "RGB_HUE";
             #sensor-binding-cells = <0>;
             bindings = <&rgb_ug RGB_HUI>, <&rgb_ug RGB_HUD>;
+        };
+//Mod Morph
+        rgb_encoder: rgb_encoder {
+            compatible = "zmk,behavior-mod-morph";
+            label = "RGB_ENCODER";
+            #binding-cells = <0>;
+            bindings = <&rgb_hue>, <&rgb_bright>;
+            mods = <(MOD_LSFT|MOD_RSFT|MOD_LCTL|MOD_RCTL)>;
         };
         fada_a: fada_a {
             compatible = "zmk,behavior-mod-morph";
@@ -565,6 +568,7 @@
             bindings = <&smogo_a>, <&logo_a>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
+//Tap Dance
         cc: cc {
             compatible = "zmk,behavior-tap-dance";
             label = "COLOR_CYCLE";
@@ -746,7 +750,7 @@
                     &trans    &trans      &trans    &mo 3     &pscode           &trans  &trans    &trans    &trans    &trans
             >;
 
-            sensor-bindings = <&rgb_hue>;
+            sensor-bindings = <&rgb_encoder>;
         };
         gaeilge_layer {
 // TODO: Some binds are waiting for shifted keycode support.
@@ -764,7 +768,7 @@
                      &trans     &trans     &trans    &trans    &trans         &trans  &trans    &trans    &trans    &trans
             >;
 
-            sensor-bindings = <&rgb_encoder>;
+            sensor-bindings = <&rgb_hue>;
         };
     };
 };
