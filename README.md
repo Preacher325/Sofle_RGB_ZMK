@@ -4,8 +4,7 @@
 
 ![20230421_005150](https://user-images.githubusercontent.com/103195644/233544056-fd9f0372-fd23-49db-a1d4-80f3d91f2b13.jpg)
 
-
-  ![keyboard-layout (1)](https://user-images.githubusercontent.com/103195644/236568709-7439fa26-82ef-4bb4-bc23-53c783808d82.jpg)
+![keyboard-layout (2)](https://user-images.githubusercontent.com/103195644/236722250-f7a01e1b-d284-417a-945c-61c984398596.jpg)
 
 Shields: Sofle RGB v2.1 PCB
 
