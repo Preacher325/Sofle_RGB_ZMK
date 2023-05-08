@@ -659,7 +659,7 @@
         };
         umlaut_u: umlaut_u {
             compatible = "zmk,behavior-mod-morph";
-            label = "FADA_U";
+            label = "UMLAUT_U";
             #binding-cells = <0>;
             bindings = <&smumlaut_u>, <&lumlaut_u>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
