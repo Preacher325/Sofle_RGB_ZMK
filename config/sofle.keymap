@@ -99,61 +99,6 @@
             , <&macro_tap     &kp KP_N0 &kp KP_N2 &kp KP_N2 &kp KP_N5>
             , <&macro_release &kp LALT>;
         }; 
-        smfada_e: smfada_e {
-        label = "SMALL_FADA_E";
-        compatible = "zmk,behavior-macro";
-        #binding-cells = <0>;
-        tap-ms = <0>;
-        wait-ms = <0>;
-        bindings
-            = <&macro_press   &kp LALT>
-            , <&macro_tap     &kp KP_N0 &kp KP_N2 &kp KP_N3 &kp KP_N3>
-            , <&macro_release &kp LALT>;
-        };
-        smfada_i: smfada_i {
-        label = "SMALL_FADA_I";
-        compatible = "zmk,behavior-macro";
-        #binding-cells = <0>;
-        tap-ms = <0>;
-        wait-ms = <0>;
-        bindings
-            = <&macro_press   &kp LALT>
-            , <&macro_tap     &kp KP_N0 &kp KP_N2 &kp KP_N3 &kp KP_N7>
-            , <&macro_release &kp LALT>;
-        };
-        smfada_o: smfada_o {
-        label = "SMALL_FADA_O";
-        compatible = "zmk,behavior-macro";
-        #binding-cells = <0>;
-        tap-ms = <0>;
-        wait-ms = <0>;
-        bindings
-            = <&macro_press   &kp LALT>
-            , <&macro_tap     &kp KP_N0 &kp KP_N2 &kp KP_N4 &kp KP_N3>
-            , <&macro_release &kp LALT>;
-        };
-        smfada_u: smfada_u {
-        label = "SMALL_FADA_U";
-        compatible = "zmk,behavior-macro";
-        #binding-cells = <0>;
-        tap-ms = <0>;
-        wait-ms = <0>;
-        bindings
-            = <&macro_press   &kp LALT>
-            , <&macro_tap     &kp KP_N0 &kp KP_N2 &kp KP_N5 &kp KP_N0>
-            , <&macro_release &kp LALT>;
-        };
-        tilden: tilden {
-        label = "TILDE_N";
-        compatible = "zmk,behavior-macro";
-        #binding-cells = <0>;
-        tap-ms = <0>;
-        wait-ms = <0>;
-        bindings
-            = <&macro_press   &kp LALT>
-            , <&macro_tap     &kp KP_N0 &kp KP_N2 &kp KP_N4 &kp KP_N1>
-            , <&macro_release &kp LALT>;
-        };
         lfada_a: lfada_a {
         label = "LARGE_FADA_A";
         compatible = "zmk,behavior-macro";
@@ -165,61 +110,28 @@
             , <&macro_tap     &kp KP_N0 &kp KP_N1 &kp KP_N9 &kp KP_N3>
             , <&macro_release &kp LALT>;
         }; 
-        lfada_e: lfada_e {
-        label = "LARGE_FADA_E";
+        smumlaut_a: smumlaut_a {
+        label = "SMALL_UMLAUT_A";
         compatible = "zmk,behavior-macro";
         #binding-cells = <0>;
         tap-ms = <0>;
         wait-ms = <0>;
         bindings
             = <&macro_press   &kp LALT>
-            , <&macro_tap     &kp KP_N0 &kp KP_N2 &kp KP_N0 &kp KP_N1>
+            , <&macro_tap     &kp KP_N0 &kp KP_N2 &kp KP_N2 &kp KP_N8>
             , <&macro_release &kp LALT>;
-        };
-        lfada_i: lfada_i {
-        label = "LARGE_FADA_I";
+        }; 
+        lumlaut_a: lumlaut_a {
+        label = "LARGE_UMLAUT_A";
         compatible = "zmk,behavior-macro";
         #binding-cells = <0>;
         tap-ms = <0>;
         wait-ms = <0>;
         bindings
             = <&macro_press   &kp LALT>
-            , <&macro_tap     &kp KP_N0 &kp KP_N2 &kp KP_N0 &kp KP_N5>
+            , <&macro_tap     &kp KP_N0 &kp KP_N1 &kp KP_N9 &kp KP_N6>
             , <&macro_release &kp LALT>;
-        };
-        lfada_o: lfada_o {
-        label = "LARGE_FADA_O";
-        compatible = "zmk,behavior-macro";
-        #binding-cells = <0>;
-        tap-ms = <0>;
-        wait-ms = <0>;
-        bindings
-            = <&macro_press   &kp LALT>
-            , <&macro_tap     &kp KP_N0 &kp KP_N2 &kp KP_N1 &kp KP_N1>
-            , <&macro_release &kp LALT>;
-        };
-        lfada_u: lfada_u {
-        label = "LARGE_FADA_U";
-        compatible = "zmk,behavior-macro";
-        #binding-cells = <0>;
-        tap-ms = <0>;
-        wait-ms = <0>;
-        bindings
-            = <&macro_press   &kp LALT>
-            , <&macro_tap     &kp KP_N0 &kp KP_N2 &kp KP_N1 &kp KP_N8>
-            , <&macro_release &kp LALT>;
-        };
-        ltilden: ltilden {
-        label = "LARGE_TILDE_N";
-        compatible = "zmk,behavior-macro";
-        #binding-cells = <0>;
-        tap-ms = <0>;
-        wait-ms = <0>;
-        bindings
-            = <&macro_press   &kp LALT>
-            , <&macro_tap     &kp KP_N0 &kp KP_N2 &kp KP_N0 &kp KP_N9>
-            , <&macro_release &kp LALT>;
-        };
+        }; 
         smlat_ae: smlat_ae {
         label = "SMALL_LATIN_AE";
         compatible = "zmk,behavior-macro";
@@ -242,8 +154,174 @@
             , <&macro_tap     &kp KP_N0 &kp KP_N1 &kp KP_N9 &kp KP_N8>
             , <&macro_release &kp LALT>;
         };
+        smfada_e: smfada_e {
+        label = "SMALL_FADA_E";
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        tap-ms = <0>;
+        wait-ms = <0>;
+        bindings
+            = <&macro_press   &kp LALT>
+            , <&macro_tap     &kp KP_N0 &kp KP_N2 &kp KP_N3 &kp KP_N3>
+            , <&macro_release &kp LALT>;
+        };
+        lfada_e: lfada_e {
+        label = "LARGE_FADA_E";
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        tap-ms = <0>;
+        wait-ms = <0>;
+        bindings
+            = <&macro_press   &kp LALT>
+            , <&macro_tap     &kp KP_N0 &kp KP_N2 &kp KP_N0 &kp KP_N1>
+            , <&macro_release &kp LALT>;
+        };
+        smfada_i: smfada_i {
+        label = "SMALL_FADA_I";
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        tap-ms = <0>;
+        wait-ms = <0>;
+        bindings
+            = <&macro_press   &kp LALT>
+            , <&macro_tap     &kp KP_N0 &kp KP_N2 &kp KP_N3 &kp KP_N7>
+            , <&macro_release &kp LALT>;
+        };
+        lfada_i: lfada_i {
+        label = "LARGE_FADA_I";
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        tap-ms = <0>;
+        wait-ms = <0>;
+        bindings
+            = <&macro_press   &kp LALT>
+            , <&macro_tap     &kp KP_N0 &kp KP_N2 &kp KP_N0 &kp KP_N5>
+            , <&macro_release &kp LALT>;
+        };
+        smfada_o: smfada_o {
+        label = "SMALL_FADA_O";
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        tap-ms = <0>;
+        wait-ms = <0>;
+        bindings
+            = <&macro_press   &kp LALT>
+            , <&macro_tap     &kp KP_N0 &kp KP_N2 &kp KP_N4 &kp KP_N3>
+            , <&macro_release &kp LALT>;
+        };
+        lfada_o: lfada_o {
+        label = "LARGE_FADA_O";
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        tap-ms = <0>;
+        wait-ms = <0>;
+        bindings
+            = <&macro_press   &kp LALT>
+            , <&macro_tap     &kp KP_N0 &kp KP_N2 &kp KP_N1 &kp KP_N1>
+            , <&macro_release &kp LALT>;
+        };
+        smumlaut_o: smumlaut_o {
+        label = "SMALL_UMLAUT_O";
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        tap-ms = <0>;
+        wait-ms = <0>;
+        bindings
+            = <&macro_press   &kp LALT>
+            , <&macro_tap     &kp KP_N0 &kp KP_N2 &kp KP_N4 &kp KP_N6>
+            , <&macro_release &kp LALT>;
+        }; 
+        lumlaut_o: lumlaut_o {
+        label = "LARGE_UMLAUT_O";
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        tap-ms = <0>;
+        wait-ms = <0>;
+        bindings
+            = <&macro_press   &kp LALT>
+            , <&macro_tap     &kp KP_N0 &kp KP_N2 &kp KP_N1 &kp KP_N4>
+            , <&macro_release &kp LALT>;
+        }; 
+        smfada_u: smfada_u {
+        label = "SMALL_FADA_U";
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        tap-ms = <0>;
+        wait-ms = <0>;
+        bindings
+            = <&macro_press   &kp LALT>
+            , <&macro_tap     &kp KP_N0 &kp KP_N2 &kp KP_N5 &kp KP_N0>
+            , <&macro_release &kp LALT>;
+        };
+        lfada_u: lfada_u {
+        label = "LARGE_FADA_U";
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        tap-ms = <0>;
+        wait-ms = <0>;
+        bindings
+            = <&macro_press   &kp LALT>
+            , <&macro_tap     &kp KP_N0 &kp KP_N2 &kp KP_N1 &kp KP_N8>
+            , <&macro_release &kp LALT>;
+        };
+        smumlaut_u: smumlaut_u {
+        label = "SMALL_UMLAUT_U";
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        tap-ms = <0>;
+        wait-ms = <0>;
+        bindings
+            = <&macro_press   &kp LALT>
+            , <&macro_tap     &kp KP_N0 &kp KP_N2 &kp KP_N5 &kp KP_N2>
+            , <&macro_release &kp LALT>;
+        }; 
+        lumlaut_u: lumlaut_u {
+        label = "LARGE_UMLAUT_U";
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        tap-ms = <0>;
+        wait-ms = <0>;
+        bindings
+            = <&macro_press   &kp LALT>
+            , <&macro_tap     &kp KP_N0 &kp KP_N2 &kp KP_N2 &kp KP_N0>
+            , <&macro_release &kp LALT>;
+        }; 
+        smtil_n: smtil_n {
+        label = "SMALL_TILDE_N";
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        tap-ms = <0>;
+        wait-ms = <0>;
+        bindings
+            = <&macro_press   &kp LALT>
+            , <&macro_tap     &kp KP_N0 &kp KP_N2 &kp KP_N4 &kp KP_N1>
+            , <&macro_release &kp LALT>;
+        };
+        ltil_n: ltil_n {
+        label = "LARGE_TILDE_N";
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        tap-ms = <0>;
+        wait-ms = <0>;
+        bindings
+            = <&macro_press   &kp LALT>
+            , <&macro_tap     &kp KP_N0 &kp KP_N2 &kp KP_N0 &kp KP_N9>
+            , <&macro_release &kp LALT>;
+        };
+        essette_s: essette_s {
+        label = "ESSETTE_S";
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        tap-ms = <0>;
+        wait-ms = <0>;
+        bindings
+            = <&macro_press   &kp LALT>
+            , <&macro_tap     &kp KP_N0 &kp KP_N2 &kp KP_N2 &kp KP_N3>
+            , <&macro_release &kp LALT>;
+        };
 //Unicode Special Characters
 //Need regkey HKEY_CURRENT_USER\Control Panel\Input Method, REG_SZ EnableHexNumpad = 1
+//Symbols
         us_cent: us_cent {
         label = "US_CENT";
         compatible = "zmk,behavior-macro";
@@ -266,6 +344,7 @@
             , <&macro_tap     &kp KP_PLUS &kp KP_N0 &kp KP_N0 &kp A &kp KP_N3>
             , <&macro_release &kp LALT>;
         };
+//IPA
         schwa: schwa {
         label = "SCHWA";
         compatible = "zmk,behavior-macro";
@@ -277,94 +356,7 @@
             , <&macro_tap     &kp KP_PLUS &kp KP_N0 &kp KP_N2 &kp KP_N5 &kp KP_N9>
             , <&macro_release &kp LALT>;
         };
-        darkl: darkl {
-        label = "DARK_L";
-        compatible = "zmk,behavior-macro";
-        #binding-cells = <0>;
-        tap-ms = <0>;
-        wait-ms = <0>;
-        bindings
-            = <&macro_press   &kp LALT>
-            , <&macro_tap     &kp KP_PLUS &kp KP_N0 &kp KP_N1 &kp KP_N4 &kp KP_N2>
-            , <&macro_release &kp LALT>;
-        };
-        ldarkl: ldarkl {
-        label = "LARGE_DARK_L";
-        compatible = "zmk,behavior-macro";
-        #binding-cells = <0>;
-        tap-ms = <0>;
-        wait-ms = <0>;
-        bindings
-            = <&macro_press   &kp LALT>
-            , <&macro_tap     &kp KP_PLUS &kp KP_N0 &kp KP_N1 &kp KP_N4 &kp KP_N1>
-            , <&macro_release &kp LALT>;
-        };
-        smacute_c: smacute_c {
-        label = "SMALL_ACUTE_C";
-        compatible = "zmk,behavior-macro";
-        #binding-cells = <0>;
-        tap-ms = <0>;
-        wait-ms = <0>;
-        bindings
-            = <&macro_press   &kp LALT>
-            , <&macro_tap     &kp KP_PLUS &kp KP_N0 &kp KP_N1 &kp KP_N0 &kp KP_N7>
-            , <&macro_release &kp LALT>;
-        };
-        lacute_c: lacute_c {
-        label = "LARGE_ACUTE_C";
-        compatible = "zmk,behavior-macro";
-        #binding-cells = <0>;
-        tap-ms = <0>;
-        wait-ms = <0>;
-        bindings
-            = <&macro_press   &kp LALT>
-            , <&macro_tap     &kp KP_PLUS &kp KP_N0 &kp KP_N1 &kp KP_N0 &kp KP_N6>
-            , <&macro_release &kp LALT>;
-        };
-        smacute_z: smacute_z {
-        label = "SMALL_ACUTE_Z";
-        compatible = "zmk,behavior-macro";
-        #binding-cells = <0>;
-        tap-ms = <0>;
-        wait-ms = <0>;
-        bindings
-            = <&macro_press   &kp LALT>
-            , <&macro_tap     &kp KP_PLUS &kp KP_N0 &kp KP_N1 &kp KP_N7 &kp A>
-            , <&macro_release &kp LALT>;
-        };
-        lacute_z: lacute_z {
-        label = "LARGE_ACUTE_Z";
-        compatible = "zmk,behavior-macro";
-        #binding-cells = <0>;
-        tap-ms = <0>;
-        wait-ms = <0>;
-        bindings
-            = <&macro_press   &kp LALT>
-            , <&macro_tap     &kp KP_PLUS &kp KP_N0 &kp KP_N1 &kp KP_N7 &kp KP_N9>
-            , <&macro_release &kp LALT>;
-        };
-        smdot_z: smdot_z {
-        label = "SMALL_DOT_Z";
-        compatible = "zmk,behavior-macro";
-        #binding-cells = <0>;
-        tap-ms = <0>;
-        wait-ms = <0>;
-        bindings
-            = <&macro_press   &kp LALT>
-            , <&macro_tap     &kp KP_PLUS &kp KP_N0 &kp KP_N1 &kp KP_N7 &kp C>
-            , <&macro_release &kp LALT>;
-        };
-        ldot_z: ldot_z {
-        label = "LARGE_DOT_Z";
-        compatible = "zmk,behavior-macro";
-        #binding-cells = <0>;
-        tap-ms = <0>;
-        wait-ms = <0>;
-        bindings
-            = <&macro_press   &kp LALT>
-            , <&macro_tap     &kp KP_PLUS &kp KP_N0 &kp KP_N1 &kp KP_N7 &kp B>
-            , <&macro_release &kp LALT>;
-        };
+//Diacritical Characters
         smogo_a: smogo_a {
         label = "SMALL_OGONEK_A";
         compatible = "zmk,behavior-macro";
@@ -407,6 +399,50 @@
         bindings
             = <&macro_press   &kp LALT>
             , <&macro_tap     &kp KP_PLUS &kp KP_N0 &kp KP_N1 &kp KP_N1 &kp KP_N8>
+            , <&macro_release &kp LALT>;
+        };
+        smacute_c: smacute_c {
+        label = "SMALL_ACUTE_C";
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        tap-ms = <0>;
+        wait-ms = <0>;
+        bindings
+            = <&macro_press   &kp LALT>
+            , <&macro_tap     &kp KP_PLUS &kp KP_N0 &kp KP_N1 &kp KP_N0 &kp KP_N7>
+            , <&macro_release &kp LALT>;
+        };
+        lacute_c: lacute_c {
+        label = "LARGE_ACUTE_C";
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        tap-ms = <0>;
+        wait-ms = <0>;
+        bindings
+            = <&macro_press   &kp LALT>
+            , <&macro_tap     &kp KP_PLUS &kp KP_N0 &kp KP_N1 &kp KP_N0 &kp KP_N6>
+            , <&macro_release &kp LALT>;
+        };
+        smdark_l: smdark_l {
+        label = "SMALL_DARK_L";
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        tap-ms = <0>;
+        wait-ms = <0>;
+        bindings
+            = <&macro_press   &kp LALT>
+            , <&macro_tap     &kp KP_PLUS &kp KP_N0 &kp KP_N1 &kp KP_N4 &kp KP_N2>
+            , <&macro_release &kp LALT>;
+        };
+        ldark_l: ldark_l {
+        label = "LARGE_DARK_L";
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        tap-ms = <0>;
+        wait-ms = <0>;
+        bindings
+            = <&macro_press   &kp LALT>
+            , <&macro_tap     &kp KP_PLUS &kp KP_N0 &kp KP_N1 &kp KP_N4 &kp KP_N1>
             , <&macro_release &kp LALT>;
         };
         smacute_n: smacute_n {
@@ -453,75 +489,58 @@
             , <&macro_tap     &kp KP_PLUS &kp KP_N0 &kp KP_N1 &kp KP_N5 &kp A>
             , <&macro_release &kp LALT>;
         };
+        smacute_z: smacute_z {
+        label = "SMALL_ACUTE_Z";
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        tap-ms = <0>;
+        wait-ms = <0>;
+        bindings
+            = <&macro_press   &kp LALT>
+            , <&macro_tap     &kp KP_PLUS &kp KP_N0 &kp KP_N1 &kp KP_N7 &kp A>
+            , <&macro_release &kp LALT>;
+        };
+        lacute_z: lacute_z {
+        label = "LARGE_ACUTE_Z";
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        tap-ms = <0>;
+        wait-ms = <0>;
+        bindings
+            = <&macro_press   &kp LALT>
+            , <&macro_tap     &kp KP_PLUS &kp KP_N0 &kp KP_N1 &kp KP_N7 &kp KP_N9>
+            , <&macro_release &kp LALT>;
+        };
+        smdot_z: smdot_z {
+        label = "SMALL_DOT_Z";
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        tap-ms = <0>;
+        wait-ms = <0>;
+        bindings
+            = <&macro_press   &kp LALT>
+            , <&macro_tap     &kp KP_PLUS &kp KP_N0 &kp KP_N1 &kp KP_N7 &kp C>
+            , <&macro_release &kp LALT>;
+        };
+        ldot_z: ldot_z {
+        label = "LARGE_DOT_Z";
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        tap-ms = <0>;
+        wait-ms = <0>;
+        bindings
+            = <&macro_press   &kp LALT>
+            , <&macro_tap     &kp KP_PLUS &kp KP_N0 &kp KP_N1 &kp KP_N7 &kp B>
+            , <&macro_release &kp LALT>;
+        };
     };
 };
-
 //Combos, note that key listing is zero indexed
 //lshift: 36
 //rshift: 49
 / {
     combos {
         compatible = "zmk,combos";
-        combo_cap_fada_a {
-            timeout-ms = <200>;
-            layers = <3>;
-            key-positions = <25 49>;
-            bindings = <&lfada_a>;
-        };
-        combo_cap_fada_e {
-            timeout-ms = <200>;
-            layers = <3>;
-            key-positions = <15 49>;
-            bindings = <&lfada_e>;
-        };
-        combo_cap_fada_i {
-            timeout-ms = <200>;
-            layers = <3>;
-            key-positions = <20 36>;
-            bindings = <&lfada_i>;
-        };
-        combo_cap_fada_o {
-            timeout-ms = <200>;
-            layers = <3>;
-            key-positions = <21 36>;
-            bindings = <&lfada_o>;
-        };
-        combo_cap_fada_u {
-            timeout-ms = <200>;
-            layers = <3>;
-            key-positions = <19 36>;
-            bindings = <&lfada_u>;
-        };
-        combo_cap_acute_n {
-            timeout-ms = <200>;
-            layers = <3>;
-            key-positions = <36 44>;
-            bindings = <&lacute_n>;
-        };
-        combo_cap_dark_l {
-            timeout-ms = <200>;
-            layers = <3>;
-            key-positions = <33 36>;
-            bindings = <&ldarkl>;
-        };
-        combo_cap_acute_c {
-            timeout-ms = <200>;
-            layers = <3>;
-            key-positions = <39 49>;
-            bindings = <&lacute_c>;
-        };
-        combo_cap_acute_z {
-            timeout-ms = <200>;
-            layers = <3>;
-            key-positions = <37 49>;
-            bindings = <&lacute_z>;
-        };
-        combo_cap_acute_s {
-            timeout-ms = <200>;
-            layers = <3>;
-            key-positions = <26 49>;
-            bindings = <&lacute_s>;
-        };
         combo_sm_lat_ae {
             timeout-ms = <200>;
             layers = <3>;
@@ -536,9 +555,173 @@
         };
     };
 };
-
+//Mod Morphs, Encoder, Tap-Dances
 / {
     behaviors {
+//Mod Morph
+        rgb_bri_sat_inc: rgb_bri_sat_inc {
+            compatible = "zmk,behavior-mod-morph";
+            label = "RGB_BRIGHTNESS_SATURATION_INCREASE";
+            #binding-cells = <0>;
+            bindings = <&rgb_ug RGB_SAI>, <&rgb_ug RGB_BRI>;
+            mods = <(MOD_LALT|MOD_RALT)>;
+        };
+        rgb_bri_sat_dec: rgb_bri_sat_dec {
+            compatible = "zmk,behavior-mod-morph";
+            label = "RGB_BRIGHTNESS_SATURATION_DECREASE";
+            #binding-cells = <0>;
+            bindings = <&rgb_ug RGB_SAD>, <&rgb_ug RGB_BRD>;
+            mods = <(MOD_LALT|MOD_RALT)>;
+        };
+        rgb_inc: rgb_inc {
+            compatible = "zmk,behavior-mod-morph";
+            label = "RGB_INCREASE";
+            #binding-cells = <0>;
+            bindings = <&rgb_ug RGB_HUI>, <&rgb_bri_sat_inc>;
+            mods = <(MOD_LSFT|MOD_RSFT|MOD_LCTL|MOD_RCTL)>;
+        };
+        rgb_dec: rgb_dec {
+            compatible = "zmk,behavior-mod-morph";
+            label = "RGB_DECREASE";
+            #binding-cells = <0>;
+            bindings = <&rgb_ug RGB_HUD>, <&rgb_bri_sat_dec>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+        ret_menu: ret_menu {
+            compatible = "zmk,behavior-mod-morph";
+            label = "RETURN_MENU";
+            #binding-cells = <0>;
+            bindings = <&kp RET>, <&kp K_APPLICATION>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+        fada_a: fada_a {
+            compatible = "zmk,behavior-mod-morph";
+            label = "FADA_A";
+            #binding-cells = <0>;
+            bindings = <&smfada_a>, <&lfada_a>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+        ogonek_a: ogonek_a {
+            compatible = "zmk,behavior-mod-morph";
+            label = "OGONEK_A";
+            #binding-cells = <0>;
+            bindings = <&smogo_a>, <&logo_a>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+        umlaut_a: umlaut_a {
+            compatible = "zmk,behavior-mod-morph";
+            label = "UMLAUT_A";
+            #binding-cells = <0>;
+            bindings = <&smumlaut_a>, <&lumlaut_a>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+        fada_e: fada_e {
+            compatible = "zmk,behavior-mod-morph";
+            label = "FADA_E";
+            #binding-cells = <0>;
+            bindings = <&smfada_e>, <&lfada_e>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+        ogonek_e: ogonek_e {
+            compatible = "zmk,behavior-mod-morph";
+            label = "OGONEK_E";
+            #binding-cells = <0>;
+            bindings = <&smogo_e>, <&logo_e>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+        fada_i: fada_i {
+            compatible = "zmk,behavior-mod-morph";
+            label = "FADA_I";
+            #binding-cells = <0>;
+            bindings = <&smfada_i>, <&lfada_i>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+        fada_o: fada_o {
+            compatible = "zmk,behavior-mod-morph";
+            label = "FADA_O";
+            #binding-cells = <0>;
+            bindings = <&smfada_o>, <&lfada_o>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+        umlaut_o: umlaut_o {
+            compatible = "zmk,behavior-mod-morph";
+            label = "UMLAUT_O";
+            #binding-cells = <0>;
+            bindings = <&smumlaut_o>, <&lumlaut_o>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+        fada_u: fada_u {
+            compatible = "zmk,behavior-mod-morph";
+            label = "FADA_U";
+            #binding-cells = <0>;
+            bindings = <&smfada_u>, <&lfada_u>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+        umlaut_u: umlaut_u {
+            compatible = "zmk,behavior-mod-morph";
+            label = "UMLAUT_U";
+            #binding-cells = <0>;
+            bindings = <&smumlaut_u>, <&lumlaut_u>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+        acute_c: acute_c {
+            compatible = "zmk,behavior-mod-morph";
+            label = "ACUTE_C";
+            #binding-cells = <0>;
+            bindings = <&smacute_c>, <&lacute_c>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+        dark_l: dark_l {
+            compatible = "zmk,behavior-mod-morph";
+            label = "DARK_L";
+            #binding-cells = <0>;
+            bindings = <&smdark_l>, <&ldark_l>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+        acute_n: acute_n {
+            compatible = "zmk,behavior-mod-morph";
+            label = "ACUTE_N";
+            #binding-cells = <0>;
+            bindings = <&smacute_n>, <&lacute_n>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+        tilde_n: tilde_n {
+            compatible = "zmk,behavior-mod-morph";
+            label = "TILDE_N";
+            #binding-cells = <0>;
+            bindings = <&smtil_n>, <&ltil_n>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+        acute_s: acute_s {
+            compatible = "zmk,behavior-mod-morph";
+            label = "ACUTE_S";
+            #binding-cells = <0>;
+            bindings = <&smacute_s>, <&lacute_s>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+        acute_z: acute_z {
+            compatible = "zmk,behavior-mod-morph";
+            label = "ACUTE_Z";
+            #binding-cells = <0>;
+            bindings = <&smacute_z>, <&lacute_z>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+        dot_z: dot_z {
+            compatible = "zmk,behavior-mod-morph";
+            label = "DOT_Z";
+            #binding-cells = <0>;
+            bindings = <&smdot_z>, <&ldot_z>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+//Encoder
+        rgb_encoder: rgb_encoder {
+            compatible = "zmk,behavior-sensor-rotate";
+            label = "RGB_ENCODER";
+            #sensor-binding-cells = <0>;
+            bindings = <&rgb_inc>, <&rgb_dec>;
+        };
+//Tap Dance
         cc: cc {
             compatible = "zmk,behavior-tap-dance";
             label = "COLOR_CYCLE";
@@ -624,45 +807,66 @@
         };
         td_ll_l3: td_ll_l3 {
             compatible = "zmk,behavior-tap-dance";
-            label = "TAP_LOWER_LAYER_LAYER_3";
+            label = "TAP_LEFT_LAYER_LAYER_3";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
             bindings = <&mo 1>, <&sl 3>;
         };
         td_rl_l3: td_rl_l3 {
             compatible = "zmk,behavior-tap-dance";
-            label = "TAP_RAISE_LAYER_LAYER_3";
+            label = "TAP_RIGHT_LAYER_LAYER_3";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
             bindings = <&mo 2>, <&sl 3>;
+        };
+        td_sp_a: td_sp_a {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_SPECIAL_A";
+            #binding-cells = <0>;
+            tapping-term-ms = <250>;
+            bindings = <&fada_a>, <&ogonek_a>, <&umlaut_a>;
+        };
+        td_sp_e: td_sp_e {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_SPECIAL_E";
+            #binding-cells = <0>;
+            tapping-term-ms = <250>;
+            bindings = <&fada_e>, <&ogonek_e>;
+        };
+        td_sp_o: td_sp_o {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_SPECIAL_O";
+            #binding-cells = <0>;
+            tapping-term-ms = <250>;
+            bindings = <&fada_o>, <&umlaut_o>;
+        };
+        td_sp_u: td_sp_u {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_SPECIAL_U";
+            #binding-cells = <0>;
+            tapping-term-ms = <250>;
+            bindings = <&fada_u>, <&umlaut_u>;
+        };
+        td_sp_n: td_sp_n {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_SPECIAL_N";
+            #binding-cells = <0>;
+            tapping-term-ms = <250>;
+            bindings = <&acute_n>, <&tilde_n>;
+        };
+        td_sp_s: td_sp_s {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_SPECIAL_S";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&acute_s>, <&essette_s>;
         };
         td_sp_z: td_sp_z {
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_SPECIAL_Z";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&smacute_z>, <&smdot_z>, <&ldot_z>;
-        };
-        td_sp_a: td_sp_a {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TAP_SPECIAL_A";
-            #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&smfada_a>, <&smogo_a>, <&logo_a>;
-        };
-        td_sp_e: td_sp_e {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TAP_SPECIAL_E";
-            #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&smfada_e>, <&smogo_e>, <&logo_e>;
-        };
-        td_sp_n: td_sp_n {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TAP_SPECIAL_N";
-            #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&smacute_n>, <&tilden>, <&ltilden>;
+            bindings = <&acute_z>, <&dot_z>;
         };
     };
     keymap {
@@ -680,7 +884,7 @@
 &kp TAB &kp Q  &kp W    &kp E    &kp R     &kp T                           &kp Y  &kp U     &kp I     &kp O    &kp P    &kp BSPC
 &clcw   &kp A  &kp S    &kp D    &kp F     &kp G                           &kp H  &kp J     &kp K     &kp L    &kp SEMI &kp SQT
 &lscw   &kp Z  &kp X    &kp C    &kp V     &kp B      &kp C_MUTE &none     &kp N  &kp M     &kp COMMA &kp DOT  &kp FSLH &rscw
-               &kp LGUI &kp LALT &kp LCTRL &td_ll_l3  &kp RET    &kp SPACE &td_rl_l3  &kp RCTRL &kp RALT  &kp RGUI
+               &kp LGUI &kp LALT &kp LCTRL &td_ll_l3  &ret_menu  &kp SPACE &td_rl_l3  &kp RCTRL &kp RALT  &kp RGUI
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
@@ -720,7 +924,7 @@
                     &trans    &trans      &trans    &mo 3     &pscode           &trans  &trans    &trans    &trans    &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp PG_DN PG_UP &inc_dec_kp C_VOL_UP C_VOL_DN>;
+            sensor-bindings = <&rgb_encoder>;
         };
         gaeilge_layer {
 // TODO: Some binds are waiting for shifted keycode support.
@@ -732,9 +936,9 @@
 //               |     |      |      |      |        |  |       |      |       |       |      |
             bindings = <
 &trans    &trans     &trans     &uk_pnd    &us_cent  &trans                           &trans    &trans    &trans    &trans      &trans    &trans
-&trans    &trans     &trans     &td_sp_e   &trans    &trans                           &trans    &smfada_u &smfada_i &smfada_o   &trans    &trans
-&trans    &td_sp_a   &smacute_s &trans     &trans    &trans                           &trans    &trans    &trans    &darkl      &trans    &trans
-&trans    &td_sp_z   &trans     &smacute_c &trans    &trans    &trans         &trans  &td_sp_n  &trans    &trans    &trans      &trans    &trans
+&trans    &trans     &trans     &td_sp_e   &trans    &trans                           &trans    &td_sp_u  &fada_i   &td_sp_o    &trans    &trans
+&trans    &td_sp_a   &td_sp_s   &trans     &trans    &trans                           &trans    &trans    &trans    &dark_l     &trans    &trans
+&trans    &td_sp_z   &trans     &acute_c   &trans    &trans    &trans         &trans  &td_sp_n  &trans    &trans    &trans      &trans    &trans
                      &trans     &trans     &trans    &trans    &trans         &trans  &trans    &trans    &trans    &trans
             >;
 
