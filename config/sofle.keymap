@@ -97,9 +97,9 @@
         tap-ms = <0>;
         wait-ms = <0>;
         bindings
-            = <&macro_press   &kp LALT &kp LSHFT>
+            = <&macro_press   &kp LCTRL &kp LSHFT>
             , <&macro_tap     &kp M>
-            , <&macro_release &kp LALT &kp LSHFT>;
+            , <&macro_release &kp LCTRL &kp LSHFT>;
         }; 
 // Windows alt code Special Characters        
         smfada_a: smfada_a {
