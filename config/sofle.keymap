@@ -14,6 +14,7 @@
 
 / {
     macros {
+// System and Power
         tm: tm {
             label = "TASK_MANAGER";
             compatible = "zmk,behavior-macro";
@@ -57,6 +58,7 @@
                 , <&macro_tap &kp U &kp U>
                 ;
         };
+// Bluetooth
         ubt0: ubt0 {
             label = "USE_BLUE_TOOTH_0";
             compatible = "zmk,behavior-macro";
@@ -87,6 +89,18 @@
                 = <&macro_tap &bt BT_SEL 2>
                 , <&macro_tap &rgb_ug RGB_COLOR_HSB(0,100,20)>;
         };
+// Various Macros
+        teams_mute: teams_mute {
+        label = "TEAMS_MUTE";
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        tap-ms = <0>;
+        wait-ms = <0>;
+        bindings
+            = <&macro_press   &kp LALT &kp LSHFT>
+            , <&macro_tap     &kp M>
+            , <&macro_release &kp LALT &kp LSHFT>;
+        }; 
 // Windows alt code Special Characters        
         smfada_a: smfada_a {
         label = "SMALL_FADA_A";
@@ -805,6 +819,13 @@
             tapping-term-ms = <200>;
             bindings = <&kp F5>, <&kp F8>;
         };
+        mute: mute {
+            compatible = "zmk,behavior-tap-dance";
+            label = "POWER_SHELL_CODE";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp C_MUTE>, <&teams_mute>;
+        };
         td_ll_l3: td_ll_l3 {
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_LEFT_LAYER_LAYER_3";
@@ -883,7 +904,7 @@
 &kp ESC &kp N1 &kp N2   &kp N3   &kp N4    &kp N5                          &kp N6 &kp N7    &kp N8    &kp N9   &kp N0   &kp DEL
 &kp TAB &kp Q  &kp W    &kp E    &kp R     &kp T                           &kp Y  &kp U     &kp I     &kp O    &kp P    &kp BSPC
 &clcw   &kp A  &kp S    &kp D    &kp F     &kp G                           &kp H  &kp J     &kp K     &kp L    &kp SEMI &kp SQT
-&lscw   &kp Z  &kp X    &kp C    &kp V     &kp B      &kp C_MUTE &none     &kp N  &kp M     &kp COMMA &kp DOT  &kp FSLH &rscw
+&lscw   &kp Z  &kp X    &kp C    &kp V     &kp B      &mute      &none     &kp N  &kp M     &kp COMMA &kp DOT  &kp FSLH &rscw
                &kp LGUI &kp LALT &kp LCTRL &td_ll_l3  &ret_menu  &kp SPACE &td_rl_l3  &kp RCTRL &kp RALT  &kp RGUI
             >;
 
