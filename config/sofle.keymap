@@ -751,6 +751,7 @@
         };
         td_bt0: td_bt0 {
             compatible = "zmk,behavior-tap-dance";
+    
             label = "TAP_DANCE_BLUE_TOOTH_0";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
@@ -821,7 +822,7 @@
         };
         mute: mute {
             compatible = "zmk,behavior-tap-dance";
-            label = "POWER_SHELL_CODE";
+            label = "MUTE";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
             bindings = <&kp C_MUTE>, <&teams_mute>;
