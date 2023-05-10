@@ -602,7 +602,7 @@
             bindings = <&rgb_ug RGB_HUD>, <&rgb_bri_sat_dec>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
-    // System Functions
+    // System Functions 
         ret_menu: ret_menu {
             compatible = "zmk,behavior-mod-morph";
             label = "RETURN_MENU";
