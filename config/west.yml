@@ -2,12 +2,12 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
-    - name: Preacher325
-      url-base: https://github.com/Preacher325
+    - name: DiogoDoreto
+      url-base: https://github.com/DiogoDoreto
   projects:
     - name: zmk
-      remote: Preacher325
-      revision: Dual
+      remote: DiogoDoreto
+      revision: waterfowl-encoders
       import: app/west.yml
   self:
     path: config
