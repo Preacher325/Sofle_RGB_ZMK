@@ -2,10 +2,12 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
+    - name: Preacher325
+      url-base: https://github.com/Preacher325
   projects:
     - name: zmk
-      remote: zmkfirmware
-      revision: main
+      remote: Preacher325
+      revision: Preacher325-Patch-1
       import: app/west.yml
   self:
     path: config
