@@ -1180,7 +1180,7 @@
 &kp ESC &kp N1 &kp N2   &kp N3   &kp N4    &kp N5                          &kp N6 &kp N7    &kp N8    &kp N9   &kp N0   &kp DEL
 &kp TAB &kp Q  &kp W    &kp E    &kp R     &kp T                           &kp Y  &kp U     &kp I     &kp O    &kp P    &kp BSPC
 &clcw   &kp A  &kp S    &kp D    &kp F     &kp G                           &kp H  &kp J     &kp K     &kp L    &kp SEMI &kp SQT
-&lscw   &kp Z  &kp X    &kp C    &kp V     &kp B      &mute      &none     &kp N  &kp M     &kp COMMA &kp DOT  &kp FSLH &rscw
+&lscw   &kp Z  &kp X    &kp C    &kp V     &kp B      &mute      &teams_mute     &kp N  &kp M     &kp COMMA &kp DOT  &kp FSLH &rscw
                &kp LGUI &kp LALT &kp LCTRL &td_ll_l3  &ret_menu  &kp SPACE &td_rl_l3  &kp RCTRL &kp RALT  &kp RGUI
             >;
 
