@@ -358,6 +358,51 @@
             , <&macro_tap     &kp KP_PLUS &kp KP_N0 &kp KP_N0 &kp A &kp KP_N3>
             , <&macro_release &kp LALT>;
         };
+        degree: degree {
+        label = "DEGREE_SIGN";
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        tap-ms = <0>;
+        wait-ms = <0>;
+        bindings
+            = <&macro_press   &kp LALT>
+            , <&macro_tap     &kp KP_PLUS &kp KP_N0 &kp KP_N0 &kp B &kp KP_N0>
+            , <&macro_release &kp LALT>;
+        };
+        inv_exc: inv_exc {
+        label = "INVERTED_EXCLAMATION_MARK";
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        tap-ms = <0>;
+        wait-ms = <0>;
+        bindings
+            = <&macro_press   &kp LALT>
+            , <&macro_tap     &kp KP_PLUS &kp KP_N0 &kp KP_N0 &kp A &kp KP_N1>
+            , <&macro_release &kp LALT>;
+        };
+        inv_ques: inv_ques {
+        label = "INVERTED_QUESTION_MARK";
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        tap-ms = <0>;
+        wait-ms = <0>;
+        bindings
+            = <&macro_press   &kp LALT>
+            , <&macro_tap     &kp KP_PLUS &kp KP_N0 &kp KP_N0 &kp B &kp F>
+            , <&macro_release &kp LALT>;
+        };
+        plus_min: plus_min {
+        label = "PLUS_MINUS_SIGN";
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        tap-ms = <0>;
+        wait-ms = <0>;
+        bindings
+            = <&macro_press   &kp LALT>
+            , <&macro_tap     &kp KP_PLUS &kp KP_N0 &kp KP_N0 &kp B &kp KP_N1>
+            , <&macro_release &kp LALT>;
+        };
+
 //IPA
         schwa: schwa {
         label = "SCHWA";
@@ -954,16 +999,16 @@
         gaeilge_layer {
 // TODO: Some binds are waiting for shifted keycode support.
 // ------------------------------------------------------------------------------------------------------------
-// |       |     |     |  £   |  ¢   |      |                   |      |       |       |      |       |       |
+// |       |  ¡  |  °  |  £   |  ¢   |   ±  |                   |      |       |       |      |       |       |
 // |       |     |     |  é   |      |      |                   |      |   ú   |   í   |   ó  |       |       |
 // |       |  á  |  ś  |      |      |      |                   |      |       |       |   ł  |       |       |
-// |       |  ź  |     |  ć   |      |      |        |  |       |  ń   |       |       |      |       |       |
+// |       |  ź  |     |  ć   |      |      |        |  |       |  ń   |       |       |      |   ¿   |       |
 //               |     |      |      |      |        |  |       |      |       |       |      |
             bindings = <
-&trans    &trans     &trans     &uk_pnd    &us_cent  &trans                           &trans    &trans    &trans    &trans      &trans    &trans
+&trans    &inv_exc   &degree    &uk_pnd    &us_cent  &plus_min                        &trans    &trans    &trans    &trans      &trans    &trans
 &trans    &trans     &trans     &td_sp_e   &trans    &trans                           &trans    &td_sp_u  &fada_i   &td_sp_o    &trans    &trans
 &trans    &td_sp_a   &td_sp_s   &trans     &trans    &trans                           &trans    &trans    &trans    &dark_l     &trans    &trans
-&trans    &td_sp_z   &trans     &acute_c   &trans    &trans    &trans         &trans  &td_sp_n  &trans    &trans    &trans      &trans    &trans
+&trans    &td_sp_z   &trans     &acute_c   &trans    &trans    &trans         &trans  &td_sp_n  &trans    &trans    &trans      &inv_ques &trans
                      &trans     &trans     &trans    &trans    &trans         &trans  &trans    &trans    &trans    &trans
             >;
 
