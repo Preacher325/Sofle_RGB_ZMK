@@ -592,6 +592,106 @@
             , <&macro_tap     &kp KP_PLUS &kp KP_N0 &kp KP_N1 &kp KP_N7 &kp B>
             , <&macro_release &kp LALT>;
         };
+    // Fractions
+        one_half: one_half {
+        label = "ONE_HALF";
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        tap-ms = <0>;
+        wait-ms = <0>;
+        bindings
+            = <&macro_press   &kp LALT>
+            , <&macro_tap     &kp KP_PLUS &kp KP_N0 &kp KP_N0 &kp B &kp D>
+            , <&macro_release &kp LALT>;
+        };
+        one_third: one_third {
+        label = "ONE_THIRD";
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        tap-ms = <0>;
+        wait-ms = <0>;
+        bindings
+            = <&macro_press   &kp LALT>
+            , <&macro_tap     &kp KP_PLUS &kp KP_N2 &kp KP_N1 &kp KP_N5 &kp KP_N3>
+            , <&macro_release &kp LALT>;
+        };
+        one_fourth: one_fourth {
+        label = "ONE_FOURTH";
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        tap-ms = <0>;
+        wait-ms = <0>;
+        bindings
+            = <&macro_press   &kp LALT>
+            , <&macro_tap     &kp KP_PLUS &kp KP_N0 &kp KP_N0 &kp B &kp C>
+            , <&macro_release &kp LALT>;
+        };
+        one_eighth: one_eighth {
+        label = "ONE_EIGHTH";
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        tap-ms = <0>;
+        wait-ms = <0>;
+        bindings
+            = <&macro_press   &kp LALT>
+            , <&macro_tap     &kp KP_PLUS &kp KP_N2 &kp KP_N1 &kp KP_N5 &kp B>
+            , <&macro_release &kp LALT>;
+        };
+        two_thirds: two_thirds {
+        label = "TWO_THIRDS";
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        tap-ms = <0>;
+        wait-ms = <0>;
+        bindings
+            = <&macro_press   &kp LALT>
+            , <&macro_tap     &kp KP_PLUS &kp KP_N2 &kp KP_N1 &kp KP_N5 &kp KP_N4>
+            , <&macro_release &kp LALT>;
+        };
+        three_fourths: three_fourths {
+        label = "THREE_FOURTHS";
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        tap-ms = <0>;
+        wait-ms = <0>;
+        bindings
+            = <&macro_press   &kp LALT>
+            , <&macro_tap     &kp KP_PLUS &kp KP_N0 &kp KP_N0 &kp B &kp E>
+            , <&macro_release &kp LALT>;
+        };
+        three_eighths: three_eighths {
+        label = "THREE_EIGHTHS";
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        tap-ms = <0>;
+        wait-ms = <0>;
+        bindings
+            = <&macro_press   &kp LALT>
+            , <&macro_tap     &kp KP_PLUS &kp KP_N2 &kp KP_N1 &kp KP_N5 &kp C>
+            , <&macro_release &kp LALT>;
+        };
+        five_eighths: five_eighths {
+        label = "FIVE_EIGHTHS";
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        tap-ms = <0>;
+        wait-ms = <0>;
+        bindings
+            = <&macro_press   &kp LALT>
+            , <&macro_tap     &kp KP_PLUS &kp KP_N2 &kp KP_N1 &kp KP_N5 &kp D>
+            , <&macro_release &kp LALT>;
+        };
+        seven_eighths: seven_eighths {
+        label = "SEVEN_EIGHTHS";
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        tap-ms = <0>;
+        wait-ms = <0>;
+        bindings
+            = <&macro_press   &kp LALT>
+            , <&macro_tap     &kp KP_PLUS &kp KP_N2 &kp KP_N1 &kp KP_N5 &kp E>
+            , <&macro_release &kp LALT>;
+        };
     };
 };
 //Combos, note that key listing is zero indexed
@@ -600,6 +700,7 @@
 / {
     combos {
         compatible = "zmk,combos";
+// Characters
         combo_sm_lat_ae {
             timeout-ms = <200>;
             layers = <3>;
@@ -611,6 +712,61 @@
             layers = <3>;
             key-positions = <15 25 49>;
             bindings = <&lglat_ae>;
+        };
+// Fractions
+        combo_one_half {
+            timeout-ms = <200>;
+            layers = <1>;
+            key-positions = <1 2>;
+            bindings = <&one_half>;
+        };
+        combo_one_third {
+            timeout-ms = <200>;
+            layers = <1>;
+            key-positions = <1 3>;
+            bindings = <&one_third>;
+        };
+        combo_one_fourth {
+            timeout-ms = <200>;
+            layers = <1>;
+            key-positions = <1 4>;
+            bindings = <&one_fourth>;
+        };
+        combo_one_eighth {
+            timeout-ms = <200>;
+            layers = <1>;
+            key-positions = <1 8>;
+            bindings = <&one_eighth>;
+        };
+        combo_two_thirds {
+            timeout-ms = <200>;
+            layers = <1>;
+            key-positions = <2 3>;
+            bindings = <&two_thirds>;
+        };
+        combo_three_fourths {
+            timeout-ms = <200>;
+            layers = <1>;
+            key-positions = <3 4>;
+            bindings = <&three_fourths>;
+        };
+        combo_three_eighths {
+            timeout-ms = <200>;
+            layers = <1>;
+            key-positions = <3 8>;
+            bindings = <&three_eighths>;
+        };
+        combo_five_eighths {
+            timeout-ms = <200>;
+            layers = <1>;
+            key-positions = <5 8>;
+            bindings = <&five_eighths>;
+        };
+        combo_seven_eighths {
+            timeout-ms = <200>;
+            layers = <1>;
+            key-positions = <7 8>;
+            bindings = <&seven_eighths>;
         };
     };
 };
