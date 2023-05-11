@@ -614,10 +614,10 @@
             compatible = "zmk,behavior-mod-morph";
             label = "MUTE";
             #binding-cells = <0>;
-            bindings = <&C_MUTE>, <&teams_mute>;
+            bindings = <&kp C_MUTE>, <&teams_mute>;
             mods = <(MOD_LSFT|MOD_RSFT|MOD_LALT|MOD_RALT|MOD_LCTL|MOD_RCTL)>;
         };
-    // Special Characters - Capitalizations 
+    // Special Characters - Capitalizations
         fada_a: fada_a {
             compatible = "zmk,behavior-mod-morph";
             label = "FADA_A";
