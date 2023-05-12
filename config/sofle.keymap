@@ -793,7 +793,7 @@
         };
 // Fractions
         combo_one_half {
-            timeout-ms = <50>;
+            timeout-ms = <30>;
             layers = <0>;
             key-positions = <1 2>;
             bindings = <&one_half>;
@@ -817,7 +817,7 @@
             bindings = <&one_eighth>;
         };
         combo_two_thirds {
-            timeout-ms = <50>;
+            timeout-ms = <30>;
             layers = <0>;
             key-positions = <2 3>;
             bindings = <&two_thirds>;
@@ -841,7 +841,7 @@
             bindings = <&five_eighths>;
         };
         combo_seven_eighths {
-            timeout-ms = <50>;
+            timeout-ms = <30>;
             layers = <0>;
             key-positions = <7 8>;
             bindings = <&seven_eighths>;
