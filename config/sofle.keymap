@@ -793,55 +793,55 @@
         };
 // Fractions
         combo_one_half {
-            timeout-ms = <150>;
+            timeout-ms = <50>;
             layers = <0>;
             key-positions = <1 2>;
             bindings = <&one_half>;
         };
         combo_one_third {
-            timeout-ms = <150>;
+            timeout-ms = <50>;
             layers = <0>;
             key-positions = <1 3>;
             bindings = <&one_third>;
         };
         combo_one_fourth {
-            timeout-ms = <150>;
+            timeout-ms = <50>;
             layers = <0>;
             key-positions = <1 4>;
             bindings = <&one_fourth>;
         };
         combo_one_eighth {
-            timeout-ms = <150>;
+            timeout-ms = <50>;
             layers = <0>;
             key-positions = <1 8>;
             bindings = <&one_eighth>;
         };
         combo_two_thirds {
-            timeout-ms = <150>;
+            timeout-ms = <50>;
             layers = <0>;
             key-positions = <2 3>;
             bindings = <&two_thirds>;
         };
         combo_three_fourths {
-            timeout-ms = <150>;
+            timeout-ms = <50>;
             layers = <0>;
             key-positions = <3 4>;
             bindings = <&three_fourths>;
         };
         combo_three_eighths {
-            timeout-ms = <150>;
+            timeout-ms = <50>;
             layers = <0>;
             key-positions = <3 8>;
             bindings = <&three_eighths>;
         };
         combo_five_eighths {
-            timeout-ms = <150>;
+            timeout-ms = <50>;
             layers = <0>;
             key-positions = <5 8>;
             bindings = <&five_eighths>;
         };
         combo_seven_eighths {
-            timeout-ms = <150>;
+            timeout-ms = <50>;
             layers = <0>;
             key-positions = <7 8>;
             bindings = <&seven_eighths>;
