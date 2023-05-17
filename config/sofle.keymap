@@ -97,7 +97,11 @@
         tap-ms = <0>;
         wait-ms = <0>;
         bindings
-            = <&macro_press   &kp LCTRL &kp LSHFT>
+            = <&macro_press   &kp LGUI>
+            , <&macro_tap     &kp N3>
+            , <&macro_release &kp LGUI>
+            , <&macro_wait_time 500>
+            , <&macro_press   &kp LCTRL &kp LSHFT>
             , <&macro_tap     &kp M>
             , <&macro_release &kp LCTRL &kp LSHFT>;
         }; 
