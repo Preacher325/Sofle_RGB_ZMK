@@ -96,11 +96,13 @@
         #binding-cells = <0>;
         tap-ms = <0>;
         wait-ms = <0>;
-        bindings
-            = <&macro_press   &kp LGUI>
+        bindings &bt BT_SEL 3
+            = <&macro_press   &bt BT_SEL 1>
+            , <&macro_wait_time 250>
+            , <&macro_press   &kp LGUI>
             , <&macro_tap     &kp N3>
             , <&macro_release &kp LGUI>
-            , <&macro_wait_time 500>
+            , <&macro_wait_time 100>
             , <&macro_press   &kp LCTRL &kp LSHFT>
             , <&macro_tap     &kp M>
             , <&macro_release &kp LCTRL &kp LSHFT>;
