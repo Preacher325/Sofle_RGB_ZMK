@@ -97,7 +97,7 @@
         tap-ms = <0>;
         wait-ms = <0>;
         bindings &bt BT_SEL 3
-            = <&macro_press   &bt BT_SEL 1>
+            = <&macro_tap   &bt BT_SEL 1>
             , <&macro_wait_time 250>
             , <&macro_press   &kp LGUI>
             , <&macro_tap     &kp N3>
