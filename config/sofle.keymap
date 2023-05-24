@@ -98,11 +98,11 @@
         wait-ms = <0>;
         bindings
             = <&macro_tap   &bt BT_SEL 1>
-            , <&macro_wait_time 250>
+            , <&macro_wait_time 100>
             , <&macro_press   &kp LGUI>
             , <&macro_tap     &kp N3>
             , <&macro_release &kp LGUI>
-            , <&macro_wait_time 100>
+            , <&macro_wait_time 50>
             , <&macro_press   &kp LCTRL &kp LSHFT>
             , <&macro_tap     &kp M>
             , <&macro_release &kp LCTRL &kp LSHFT>;
