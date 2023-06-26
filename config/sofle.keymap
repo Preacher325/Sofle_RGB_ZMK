@@ -12,6 +12,8 @@
 &left_encoder { resolution = <1>; };
 &right_encoder { resolution = <1>; };
 
+/ {
+
 left_encoder: encoder_left {
     compatible = "alps,ec11";
     label = "LEFT_ENCODER";
@@ -28,13 +30,12 @@ right_encoder: encoder_right {
     steps = <30>;
 };
 
-/ {
 sensors {
         compatible = "zmk,keymap-sensors";
         sensors = <&left_encoder &right_encoder>;
         triggers-per-rotation = <30>;
     };
-}
+};
 
 / {
     macros {
