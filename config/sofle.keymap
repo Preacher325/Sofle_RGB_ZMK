@@ -9,8 +9,32 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/rgb.h>
 #include <dt-bindings/zmk/outputs.h>
-&left_encoder { resolution = <2>; };
-&right_encoder { resolution = <2>; };
+&left_encoder { resolution = <1>; };
+&right_encoder { resolution = <1>; };
+
+left_encoder: encoder_left {
+    compatible = "alps,ec11";
+    label = "LEFT_ENCODER";
+    a-gpios = <&pro_micro 21 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+    b-gpios = <&pro_micro 20 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+    steps = <30>;
+};
+
+right_encoder: encoder_right {
+    compatible = "alps,ec11";
+    label = "RIGHT_ENCODER";
+    a-gpios = <&pro_micro 21 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+    b-gpios = <&pro_micro 20 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+    steps = <30>;
+};
+
+/ {
+sensors {
+        compatible = "zmk,keymap-sensors";
+        sensors = <&left_encoder &right_encoder>;
+        triggers-per-rotation = <30>;
+    };
+}
 
 / {
     macros {
