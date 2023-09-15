@@ -25,6 +25,14 @@
                 , <&macro_release &kp LCTRL &kp LSHFT>
                 ;
         };
+        cad: cad{
+            label = "CTRL_ALT_DEL";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_tap &kp LCTRL &kp LALT &kp DEL>
+                ;
+        };
         slp: slp {
             label = "SLEEP";
             compatible = "zmk,behavior-macro";
@@ -1216,6 +1224,13 @@
             #binding-cells = <0>;
             tapping-term-ms = <200>;
             bindings = <&kp GT>, <&dbl_right>;
+        };
+        cad_kp: cad_kp {
+            compatible = "zmk,behavior-tap-dance";
+            label = "CTRL_ALT_DEL_COMBO";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp LGUI>, <&cad>;
         };
     };
     keymap {
