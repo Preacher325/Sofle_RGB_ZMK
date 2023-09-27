@@ -118,7 +118,7 @@
         }; 
 // Windows alt code Special Characters        
         
-smfada_a: smfada_a {
+        smfada_a: smfada_a {
         label = "SMALL_FADA_A";
         compatible = "zmk,behavior-macro";
         #binding-cells = <0>;
