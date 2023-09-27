@@ -117,237 +117,238 @@
             , <&macro_release &kp LCTRL &kp LSHFT>;
         }; 
 // Windows alt code Special Characters        
-        smfada_a: smfada_a {
-        label = "SMALL_FADA_A";
-        compatible = "zmk,behavior-macro";
-        #binding-cells = <0>;
-        tap-ms = <0>;
-        wait-ms = <0>;
-        bindings
-            = <&macro_press   &kp LALT>
-            , <&macro_tap     &kp KP_N0 &kp KP_N2 &kp KP_N2 &kp KP_N5>
-            , <&macro_release &kp LALT>;
-        }; 
-        lfada_a: lfada_a {
-        label = "LARGE_FADA_A";
-        compatible = "zmk,behavior-macro";
-        #binding-cells = <0>;
-        tap-ms = <0>;
-        wait-ms = <0>;
-        bindings
-            = <&macro_press   &kp LALT>
-            , <&macro_tap     &kp KP_N0 &kp KP_N1 &kp KP_N9 &kp KP_N3>
-            , <&macro_release &kp LALT>;
-        }; 
-        smumlaut_a: smumlaut_a {
-        label = "SMALL_UMLAUT_A";
-        compatible = "zmk,behavior-macro";
-        #binding-cells = <0>;
-        tap-ms = <0>;
-        wait-ms = <0>;
-        bindings
-            = <&macro_press   &kp LALT>
-            , <&macro_tap     &kp KP_N0 &kp KP_N2 &kp KP_N2 &kp KP_N8>
-            , <&macro_release &kp LALT>;
-        }; 
-        lumlaut_a: lumlaut_a {
-        label = "LARGE_UMLAUT_A";
-        compatible = "zmk,behavior-macro";
-        #binding-cells = <0>;
-        tap-ms = <0>;
-        wait-ms = <0>;
-        bindings
-            = <&macro_press   &kp LALT>
-            , <&macro_tap     &kp KP_N0 &kp KP_N1 &kp KP_N9 &kp KP_N6>
-            , <&macro_release &kp LALT>;
-        }; 
-        smlat_ae: smlat_ae {
-        label = "SMALL_LATIN_AE";
-        compatible = "zmk,behavior-macro";
-        #binding-cells = <0>;
-        tap-ms = <0>;
-        wait-ms = <0>;
-        bindings
-            = <&macro_press   &kp LALT>
-            , <&macro_tap     &kp KP_N0 &kp KP_N2 &kp KP_N3 &kp KP_N0>
-            , <&macro_release &kp LALT>;
-        };
-        lglat_ae: lglat_ae {
-        label = "LARGE_LATIN_AE";
-        compatible = "zmk,behavior-macro";
-        #binding-cells = <0>;
-        tap-ms = <0>;
-        wait-ms = <0>;
-        bindings
-            = <&macro_press   &kp LALT>
-            , <&macro_tap     &kp KP_N0 &kp KP_N1 &kp KP_N9 &kp KP_N8>
-            , <&macro_release &kp LALT>;
-        };
-        smfada_e: smfada_e {
-        label = "SMALL_FADA_E";
-        compatible = "zmk,behavior-macro";
-        #binding-cells = <0>;
-        tap-ms = <0>;
-        wait-ms = <0>;
-        bindings
-            = <&macro_press   &kp LALT>
-            , <&macro_tap     &kp KP_N0 &kp KP_N2 &kp KP_N3 &kp KP_N3>
-            , <&macro_release &kp LALT>;
-        };
-        lfada_e: lfada_e {
-        label = "LARGE_FADA_E";
-        compatible = "zmk,behavior-macro";
-        #binding-cells = <0>;
-        tap-ms = <0>;
-        wait-ms = <0>;
-        bindings
-            = <&macro_press   &kp LALT>
-            , <&macro_tap     &kp KP_N0 &kp KP_N2 &kp KP_N0 &kp KP_N1>
-            , <&macro_release &kp LALT>;
-        };
-        smfada_i: smfada_i {
-        label = "SMALL_FADA_I";
-        compatible = "zmk,behavior-macro";
-        #binding-cells = <0>;
-        tap-ms = <0>;
-        wait-ms = <0>;
-        bindings
-            = <&macro_press   &kp LALT>
-            , <&macro_tap     &kp KP_N0 &kp KP_N2 &kp KP_N3 &kp KP_N7>
-            , <&macro_release &kp LALT>;
-        };
-        lfada_i: lfada_i {
-        label = "LARGE_FADA_I";
-        compatible = "zmk,behavior-macro";
-        #binding-cells = <0>;
-        tap-ms = <0>;
-        wait-ms = <0>;
-        bindings
-            = <&macro_press   &kp LALT>
-            , <&macro_tap     &kp KP_N0 &kp KP_N2 &kp KP_N0 &kp KP_N5>
-            , <&macro_release &kp LALT>;
-        };
-        smfada_o: smfada_o {
-        label = "SMALL_FADA_O";
-        compatible = "zmk,behavior-macro";
-        #binding-cells = <0>;
-        tap-ms = <0>;
-        wait-ms = <0>;
-        bindings
-            = <&macro_press   &kp LALT>
-            , <&macro_tap     &kp KP_N0 &kp KP_N2 &kp KP_N4 &kp KP_N3>
-            , <&macro_release &kp LALT>;
-        };
-        lfada_o: lfada_o {
-        label = "LARGE_FADA_O";
-        compatible = "zmk,behavior-macro";
-        #binding-cells = <0>;
-        tap-ms = <0>;
-        wait-ms = <0>;
-        bindings
-            = <&macro_press   &kp LALT>
-            , <&macro_tap     &kp KP_N0 &kp KP_N2 &kp KP_N1 &kp KP_N1>
-            , <&macro_release &kp LALT>;
-        };
-        smumlaut_o: smumlaut_o {
-        label = "SMALL_UMLAUT_O";
-        compatible = "zmk,behavior-macro";
-        #binding-cells = <0>;
-        tap-ms = <0>;
-        wait-ms = <0>;
-        bindings
-            = <&macro_press   &kp LALT>
-            , <&macro_tap     &kp KP_N0 &kp KP_N2 &kp KP_N4 &kp KP_N6>
-            , <&macro_release &kp LALT>;
-        }; 
-        lumlaut_o: lumlaut_o {
-        label = "LARGE_UMLAUT_O";
-        compatible = "zmk,behavior-macro";
-        #binding-cells = <0>;
-        tap-ms = <0>;
-        wait-ms = <0>;
-        bindings
-            = <&macro_press   &kp LALT>
-            , <&macro_tap     &kp KP_N0 &kp KP_N2 &kp KP_N1 &kp KP_N4>
-            , <&macro_release &kp LALT>;
-        }; 
-        smfada_u: smfada_u {
-        label = "SMALL_FADA_U";
-        compatible = "zmk,behavior-macro";
-        #binding-cells = <0>;
-        tap-ms = <0>;
-        wait-ms = <0>;
-        bindings
-            = <&macro_press   &kp LALT>
-            , <&macro_tap     &kp KP_N0 &kp KP_N2 &kp KP_N5 &kp KP_N0>
-            , <&macro_release &kp LALT>;
-        };
-        lfada_u: lfada_u {
-        label = "LARGE_FADA_U";
-        compatible = "zmk,behavior-macro";
-        #binding-cells = <0>;
-        tap-ms = <0>;
-        wait-ms = <0>;
-        bindings
-            = <&macro_press   &kp LALT>
-            , <&macro_tap     &kp KP_N0 &kp KP_N2 &kp KP_N1 &kp KP_N8>
-            , <&macro_release &kp LALT>;
-        };
-        smumlaut_u: smumlaut_u {
-        label = "SMALL_UMLAUT_U";
-        compatible = "zmk,behavior-macro";
-        #binding-cells = <0>;
-        tap-ms = <0>;
-        wait-ms = <0>;
-        bindings
-            = <&macro_press   &kp LALT>
-            , <&macro_tap     &kp KP_N0 &kp KP_N2 &kp KP_N5 &kp KP_N2>
-            , <&macro_release &kp LALT>;
-        }; 
-        lumlaut_u: lumlaut_u {
-        label = "LARGE_UMLAUT_U";
-        compatible = "zmk,behavior-macro";
-        #binding-cells = <0>;
-        tap-ms = <0>;
-        wait-ms = <0>;
-        bindings
-            = <&macro_press   &kp LALT>
-            , <&macro_tap     &kp KP_N0 &kp KP_N2 &kp KP_N2 &kp KP_N0>
-            , <&macro_release &kp LALT>;
-        }; 
-        smtil_n: smtil_n {
-        label = "SMALL_TILDE_N";
-        compatible = "zmk,behavior-macro";
-        #binding-cells = <0>;
-        tap-ms = <0>;
-        wait-ms = <0>;
-        bindings
-            = <&macro_press   &kp LALT>
-            , <&macro_tap     &kp KP_N0 &kp KP_N2 &kp KP_N4 &kp KP_N1>
-            , <&macro_release &kp LALT>;
-        };
-        ltil_n: ltil_n {
-        label = "LARGE_TILDE_N";
-        compatible = "zmk,behavior-macro";
-        #binding-cells = <0>;
-        tap-ms = <0>;
-        wait-ms = <0>;
-        bindings
-            = <&macro_press   &kp LALT>
-            , <&macro_tap     &kp KP_N0 &kp KP_N2 &kp KP_N0 &kp KP_N9>
-            , <&macro_release &kp LALT>;
-        };
-        essette_s: essette_s {
-        label = "ESSETTE_S";
-        compatible = "zmk,behavior-macro";
-        #binding-cells = <0>;
-        tap-ms = <0>;
-        wait-ms = <0>;
-        bindings
-            = <&macro_press   &kp LALT>
-            , <&macro_tap     &kp KP_N0 &kp KP_N2 &kp KP_N2 &kp KP_N3>
-            , <&macro_release &kp LALT>;
-        };
+        
+smfada_a: smfada_a {
+        label = "SMALL_FADA_A";
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        tap-ms = <0>;
+        wait-ms = <0>;
+        bindings
+            = <&macro_press   &kp LALT>
+            , <&macro_tap     &kp KP_PLUS &kp KP_N0 &kp KP_N0 &kp E &kp KP_N1>
+            , <&macro_release &kp LALT>;
+        }; 
+        lfada_a: lfada_a {
+        label = "LARGE_FADA_A";
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        tap-ms = <0>;
+        wait-ms = <0>;
+        bindings
+            = <&macro_press   &kp LALT>
+            , <&macro_tap     &kp KP_PLUS &kp KP_N0 &kp KP_N0 &kp C &kp KP_N1>
+            , <&macro_release &kp LALT>;
+        }; 
+        smumlaut_a: smumlaut_a {
+        label = "SMALL_UMLAUT_A";
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        tap-ms = <0>;
+        wait-ms = <0>;
+        bindings
+            = <&macro_press   &kp LALT>
+            , <&macro_tap     &kp KP_PLUS &kp KP_N0 &kp KP_N0 &kp E &kp KP_N4>
+            , <&macro_release &kp LALT>;
+        }; 
+        lumlaut_a: lumlaut_a {
+        label = "LARGE_UMLAUT_A";
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        tap-ms = <0>;
+        wait-ms = <0>;
+        bindings
+            = <&macro_press   &kp LALT>
+            , <&macro_tap     &kp KP_PLUS &kp KP_N0 &kp KP_N0 &kp C &kp KP_N4>
+            , <&macro_release &kp LALT>;
+        }; 
+        smlat_ae: smlat_ae {
+        label = "SMALL_LATIN_AE";
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        tap-ms = <0>;
+        wait-ms = <0>;
+        bindings
+            = <&macro_press   &kp LALT>
+            , <&macro_tap     &kp KP_PLUS &kp KP_N0 &kp KP_N0 &kp E &kp KP_N6>
+            , <&macro_release &kp LALT>;
+        };
+        lglat_ae: lglat_ae {
+        label = "LARGE_LATIN_AE";
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        tap-ms = <0>;
+        wait-ms = <0>;
+        bindings
+            = <&macro_press   &kp LALT>
+            , <&macro_tap     &kp KP_PLUS &kp KP_N0 &kp KP_N0 &kp C &kp KP_N6>
+            , <&macro_release &kp LALT>;
+        };
+        smfada_e: smfada_e {
+        label = "SMALL_FADA_E";
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        tap-ms = <0>;
+        wait-ms = <0>;
+        bindings
+            = <&macro_press   &kp LALT>
+            , <&macro_tap     &kp KP_PLUS &kp KP_N0 &kp KP_N0 &kp E &kp KP_N9>
+            , <&macro_release &kp LALT>;
+        };
+        lfada_e: lfada_e {
+        label = "LARGE_FADA_E";
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        tap-ms = <0>;
+        wait-ms = <0>;
+        bindings
+            = <&macro_press   &kp LALT>
+            , <&macro_tap     &kp KP_PLUS &kp KP_N0 &kp KP_N0 &kp C &kp KP_N9>
+            , <&macro_release &kp LALT>;
+        };
+        smfada_i: smfada_i {
+        label = "SMALL_FADA_I";
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        tap-ms = <0>;
+        wait-ms = <0>;
+        bindings
+            = <&macro_press   &kp LALT>
+            , <&macro_tap     &kp KP_PLUS &kp KP_N0 &kp KP_N0 &kp E &kp D>
+            , <&macro_release &kp LALT>;
+        };
+        lfada_i: lfada_i {
+        label = "LARGE_FADA_I";
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        tap-ms = <0>;
+        wait-ms = <0>;
+        bindings
+            = <&macro_press   &kp LALT>
+            , <&macro_tap     &kp KP_PLUS &kp KP_N0 &kp KP_N0 &kp C &kp D>
+            , <&macro_release &kp LALT>;
+        };
+        smfada_o: smfada_o {
+        label = "SMALL_FADA_O";
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        tap-ms = <0>;
+        wait-ms = <0>;
+        bindings
+            = <&macro_press   &kp LALT>
+            , <&macro_tap     &kp KP_PLUS &kp KP_N0 &kp KP_N0 &kp F &kp KP_N3>
+            , <&macro_release &kp LALT>;
+        };
+        lfada_o: lfada_o {
+        label = "LARGE_FADA_O";
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        tap-ms = <0>;
+        wait-ms = <0>;
+        bindings
+            = <&macro_press   &kp LALT>
+            , <&macro_tap     &kp KP_PLUS &kp KP_N0 &kp KP_N0 &kp D &kp KP_N3>
+            , <&macro_release &kp LALT>;
+        };
+        smumlaut_o: smumlaut_o {
+        label = "SMALL_UMLAUT_O";
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        tap-ms = <0>;
+        wait-ms = <0>;
+        bindings
+            = <&macro_press   &kp LALT>
+            , <&macro_tap     &kp KP_PLUS &kp KP_N0 &kp KP_N0 &kp F &kp KP_N6>
+            , <&macro_release &kp LALT>;
+        }; 
+        lumlaut_o: lumlaut_o {
+        label = "LARGE_UMLAUT_O";
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        tap-ms = <0>;
+        wait-ms = <0>;
+        bindings
+            = <&macro_press   &kp LALT>
+            , <&macro_tap     &kp KP_PLUS &kp KP_N0 &kp KP_N0 &kp D &kp KP_N6>
+            , <&macro_release &kp LALT>;
+        }; 
+        smfada_u: smfada_u {
+        label = "SMALL_FADA_U";
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        tap-ms = <0>;
+        wait-ms = <0>;
+        bindings
+            = <&macro_press   &kp LALT>
+            , <&macro_tap     &kp KP_PLUS &kp KP_N0 &kp KP_N0 &kp F &kp A>
+            , <&macro_release &kp LALT>;
+        };
+        lfada_u: lfada_u {
+        label = "LARGE_FADA_U";
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        tap-ms = <0>;
+        wait-ms = <0>;
+        bindings
+            = <&macro_press   &kp LALT>
+            , <&macro_tap     &kp KP_PLUS &kp KP_N0 &kp KP_N0 &kp D &kp A>
+            , <&macro_release &kp LALT>;
+        };
+        smumlaut_u: smumlaut_u {
+        label = "SMALL_UMLAUT_U";
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        tap-ms = <0>;
+        wait-ms = <0>;
+        bindings
+            = <&macro_press   &kp LALT>
+            , <&macro_tap     &kp KP_PLUS &kp KP_N0 &kp KP_N0 &kp F &kp C>
+            , <&macro_release &kp LALT>;
+        }; 
+        lumlaut_u: lumlaut_u {
+        label = "LARGE_UMLAUT_U";
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        tap-ms = <0>;
+        wait-ms = <0>;
+        bindings
+            = <&macro_press   &kp LALT>
+            , <&macro_tap     &kp KP_PLUS &kp KP_N0 &kp KP_N0 &kp D &kp C>
+            , <&macro_release &kp LALT>;
+        }; 
+        smtil_n: smtil_n {
+        label = "SMALL_TILDE_N";
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        tap-ms = <0>;
+        wait-ms = <0>;
+        bindings
+            = <&macro_press   &kp LALT>
+            , <&macro_tap     &kp KP_PLUS &kp KP_N0 &kp KP_N0 &kp F &kp KP_N1>
+            , <&macro_release &kp LALT>;
+        };
+        ltil_n: ltil_n {
+        label = "LARGE_TILDE_N";
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        tap-ms = <0>;
+        wait-ms = <0>;
+        bindings
+            = <&macro_press   &kp LALT>
+            , <&macro_tap     &kp KP_PLUS &kp KP_N0 &kp KP_N0 &kp D &kp KP_N1>
+            , <&macro_release &kp LALT>;
+        };
+        essette_s: essette_s {
+        label = "ESSETTE_S";
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        tap-ms = <0>;
+        wait-ms = <0>;
+        bindings
+            = <&macro_press   &kp LALT>
+            , <&macro_tap     &kp KP_PLUS &kp KP_N0 &kp KP_N0 &kp D &kp F>
+            , <&macro_release &kp LALT>;
+        };
 //Unicode Special Characters
 //Need regkey HKEY_CURRENT_USER\Control Panel\Input Method, REG_SZ EnableHexNumpad = 1
 //Symbols
