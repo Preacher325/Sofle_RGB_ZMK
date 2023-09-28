@@ -116,7 +116,9 @@
             , <&macro_tap     &kp M>
             , <&macro_release &kp LCTRL &kp LSHFT>;
         }; 
-// Windows alt code Special Characters        
+//Unicode Special Characters
+//Need regkey HKEY_CURRENT_USER\Control Panel\Input Method, REG_SZ EnableHexNumpad = 1
+//Symbols       
         smfada_a: smfada_a {
         label = "SMALL_FADA_A";
         compatible = "zmk,behavior-macro";
@@ -125,7 +127,7 @@
         wait-ms = <0>;
         bindings
             = <&macro_press   &kp LALT>
-            , <&macro_tap     &kp KP_N0 &kp KP_N2 &kp KP_N2 &kp KP_N5>
+            , <&macro_tap     &kp KP_PLUS &kp KP_N0 &kp KP_N0 &kp E &kp KP_N1>
             , <&macro_release &kp LALT>;
         }; 
         lfada_a: lfada_a {
@@ -136,7 +138,7 @@
         wait-ms = <0>;
         bindings
             = <&macro_press   &kp LALT>
-            , <&macro_tap     &kp KP_N0 &kp KP_N1 &kp KP_N9 &kp KP_N3>
+            , <&macro_tap     &kp KP_PLUS &kp KP_N0 &kp KP_N0 &kp C &kp KP_N1>
             , <&macro_release &kp LALT>;
         }; 
         smumlaut_a: smumlaut_a {
@@ -147,7 +149,7 @@
         wait-ms = <0>;
         bindings
             = <&macro_press   &kp LALT>
-            , <&macro_tap     &kp KP_N0 &kp KP_N2 &kp KP_N2 &kp KP_N8>
+            , <&macro_tap     &kp KP_PLUS &kp KP_N0 &kp KP_N0 &kp E &kp KP_N4>
             , <&macro_release &kp LALT>;
         }; 
         lumlaut_a: lumlaut_a {
@@ -158,7 +160,7 @@
         wait-ms = <0>;
         bindings
             = <&macro_press   &kp LALT>
-            , <&macro_tap     &kp KP_N0 &kp KP_N1 &kp KP_N9 &kp KP_N6>
+            , <&macro_tap     &kp KP_PLUS &kp KP_N0 &kp KP_N0 &kp C &kp KP_N4>
             , <&macro_release &kp LALT>;
         }; 
         smlat_ae: smlat_ae {
@@ -169,7 +171,7 @@
         wait-ms = <0>;
         bindings
             = <&macro_press   &kp LALT>
-            , <&macro_tap     &kp KP_N0 &kp KP_N2 &kp KP_N3 &kp KP_N0>
+            , <&macro_tap     &kp KP_PLUS &kp KP_N0 &kp KP_N0 &kp E &kp KP_N6>
             , <&macro_release &kp LALT>;
         };
         lglat_ae: lglat_ae {
@@ -180,7 +182,7 @@
         wait-ms = <0>;
         bindings
             = <&macro_press   &kp LALT>
-            , <&macro_tap     &kp KP_N0 &kp KP_N1 &kp KP_N9 &kp KP_N8>
+            , <&macro_tap     &kp KP_PLUS &kp KP_N0 &kp KP_N0 &kp C &kp KP_N6>
             , <&macro_release &kp LALT>;
         };
         smfada_e: smfada_e {
@@ -191,7 +193,7 @@
         wait-ms = <0>;
         bindings
             = <&macro_press   &kp LALT>
-            , <&macro_tap     &kp KP_N0 &kp KP_N2 &kp KP_N3 &kp KP_N3>
+            , <&macro_tap     &kp KP_PLUS &kp KP_N0 &kp KP_N0 &kp E &kp KP_N9>
             , <&macro_release &kp LALT>;
         };
         lfada_e: lfada_e {
@@ -202,7 +204,7 @@
         wait-ms = <0>;
         bindings
             = <&macro_press   &kp LALT>
-            , <&macro_tap     &kp KP_N0 &kp KP_N2 &kp KP_N0 &kp KP_N1>
+            , <&macro_tap     &kp KP_PLUS &kp KP_N0 &kp KP_N0 &kp C &kp KP_N9>
             , <&macro_release &kp LALT>;
         };
         smfada_i: smfada_i {
@@ -213,7 +215,7 @@
         wait-ms = <0>;
         bindings
             = <&macro_press   &kp LALT>
-            , <&macro_tap     &kp KP_N0 &kp KP_N2 &kp KP_N3 &kp KP_N7>
+            , <&macro_tap     &kp KP_PLUS &kp KP_N0 &kp KP_N0 &kp E &kp D>
             , <&macro_release &kp LALT>;
         };
         lfada_i: lfada_i {
@@ -224,7 +226,7 @@
         wait-ms = <0>;
         bindings
             = <&macro_press   &kp LALT>
-            , <&macro_tap     &kp KP_N0 &kp KP_N2 &kp KP_N0 &kp KP_N5>
+            , <&macro_tap     &kp KP_PLUS &kp KP_N0 &kp KP_N0 &kp C &kp D>
             , <&macro_release &kp LALT>;
         };
         smfada_o: smfada_o {
@@ -235,7 +237,7 @@
         wait-ms = <0>;
         bindings
             = <&macro_press   &kp LALT>
-            , <&macro_tap     &kp KP_N0 &kp KP_N2 &kp KP_N4 &kp KP_N3>
+            , <&macro_tap     &kp KP_PLUS &kp KP_N0 &kp KP_N0 &kp F &kp KP_N3>
             , <&macro_release &kp LALT>;
         };
         lfada_o: lfada_o {
@@ -246,7 +248,7 @@
         wait-ms = <0>;
         bindings
             = <&macro_press   &kp LALT>
-            , <&macro_tap     &kp KP_N0 &kp KP_N2 &kp KP_N1 &kp KP_N1>
+            , <&macro_tap     &kp KP_PLUS &kp KP_N0 &kp KP_N0 &kp D &kp KP_N3>
             , <&macro_release &kp LALT>;
         };
         smumlaut_o: smumlaut_o {
@@ -257,7 +259,7 @@
         wait-ms = <0>;
         bindings
             = <&macro_press   &kp LALT>
-            , <&macro_tap     &kp KP_N0 &kp KP_N2 &kp KP_N4 &kp KP_N6>
+            , <&macro_tap     &kp KP_PLUS &kp KP_N0 &kp KP_N0 &kp F &kp KP_N6>
             , <&macro_release &kp LALT>;
         }; 
         lumlaut_o: lumlaut_o {
@@ -268,7 +270,7 @@
         wait-ms = <0>;
         bindings
             = <&macro_press   &kp LALT>
-            , <&macro_tap     &kp KP_N0 &kp KP_N2 &kp KP_N1 &kp KP_N4>
+            , <&macro_tap     &kp KP_PLUS &kp KP_N0 &kp KP_N0 &kp D &kp KP_N6>
             , <&macro_release &kp LALT>;
         }; 
         smfada_u: smfada_u {
@@ -279,7 +281,7 @@
         wait-ms = <0>;
         bindings
             = <&macro_press   &kp LALT>
-            , <&macro_tap     &kp KP_N0 &kp KP_N2 &kp KP_N5 &kp KP_N0>
+            , <&macro_tap     &kp KP_PLUS &kp KP_N0 &kp KP_N0 &kp F &kp A>
             , <&macro_release &kp LALT>;
         };
         lfada_u: lfada_u {
@@ -290,7 +292,7 @@
         wait-ms = <0>;
         bindings
             = <&macro_press   &kp LALT>
-            , <&macro_tap     &kp KP_N0 &kp KP_N2 &kp KP_N1 &kp KP_N8>
+            , <&macro_tap     &kp KP_PLUS &kp KP_N0 &kp KP_N0 &kp D &kp A>
             , <&macro_release &kp LALT>;
         };
         smumlaut_u: smumlaut_u {
@@ -301,7 +303,7 @@
         wait-ms = <0>;
         bindings
             = <&macro_press   &kp LALT>
-            , <&macro_tap     &kp KP_N0 &kp KP_N2 &kp KP_N5 &kp KP_N2>
+            , <&macro_tap     &kp KP_PLUS &kp KP_N0 &kp KP_N0 &kp F &kp C>
             , <&macro_release &kp LALT>;
         }; 
         lumlaut_u: lumlaut_u {
@@ -312,7 +314,7 @@
         wait-ms = <0>;
         bindings
             = <&macro_press   &kp LALT>
-            , <&macro_tap     &kp KP_N0 &kp KP_N2 &kp KP_N2 &kp KP_N0>
+            , <&macro_tap     &kp KP_PLUS &kp KP_N0 &kp KP_N0 &kp D &kp C>
             , <&macro_release &kp LALT>;
         }; 
         smtil_n: smtil_n {
@@ -323,7 +325,7 @@
         wait-ms = <0>;
         bindings
             = <&macro_press   &kp LALT>
-            , <&macro_tap     &kp KP_N0 &kp KP_N2 &kp KP_N4 &kp KP_N1>
+            , <&macro_tap     &kp KP_PLUS &kp KP_N0 &kp KP_N0 &kp F &kp KP_N1>
             , <&macro_release &kp LALT>;
         };
         ltil_n: ltil_n {
@@ -334,7 +336,7 @@
         wait-ms = <0>;
         bindings
             = <&macro_press   &kp LALT>
-            , <&macro_tap     &kp KP_N0 &kp KP_N2 &kp KP_N0 &kp KP_N9>
+            , <&macro_tap     &kp KP_PLUS &kp KP_N0 &kp KP_N0 &kp D &kp KP_N1>
             , <&macro_release &kp LALT>;
         };
         essette_s: essette_s {
@@ -345,12 +347,9 @@
         wait-ms = <0>;
         bindings
             = <&macro_press   &kp LALT>
-            , <&macro_tap     &kp KP_N0 &kp KP_N2 &kp KP_N2 &kp KP_N3>
+            , <&macro_tap     &kp KP_PLUS &kp KP_N0 &kp KP_N0 &kp D &kp F>
             , <&macro_release &kp LALT>;
         };
-//Unicode Special Characters
-//Need regkey HKEY_CURRENT_USER\Control Panel\Input Method, REG_SZ EnableHexNumpad = 1
-//Symbols
         euro: euro {
         label = "EURO";
         compatible = "zmk,behavior-macro";
