@@ -9,8 +9,8 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/rgb.h>
 #include <dt-bindings/zmk/outputs.h>
-&left_encoder { resolution = <2>; };
-&right_encoder { resolution = <60>; };
+//&left_encoder { resolution = <2>; };
+//&right_encoder { resolution = <60>; };
 
 / {
     macros {
