@@ -15,7 +15,7 @@ sensors {
         sensors = <&left_encoder &right_encoder>;
         triggers-per-rotation = <20>;
     };
-}
+};
 
 / {
     macros {
