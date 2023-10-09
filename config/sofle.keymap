@@ -9,8 +9,8 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/rgb.h>
 #include <dt-bindings/zmk/outputs.h>
-&left_encoder { resolution = <8>; };
-&right_encoder { resolution = <8>; };
+&left_encoder { triggers-per-rotation = <30>;; };
+&right_encoder { triggers-per-rotation = <30>;; };
 
 / {
     macros {
