@@ -11,7 +11,8 @@
 #include <dt-bindings/zmk/outputs.h>
 
 
-
+//Encoder Support
+//Alps Alpine EC11N1524402: 30 Detent, 15PPR, 2 Channel, Quadrature, 15000 Cycle
 / {
     left_encoder: encoder_left {
         compatible = "alps,ec11";
