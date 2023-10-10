@@ -13,13 +13,6 @@
 
 
 / {
-    right_encoder: encoder_right {
-        compatible = "alps,ec11";
-        label = "RIGHT_ENCODER";
-        a-gpios = <&pro_micro 21 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
-        b-gpios = <&pro_micro 20 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
-        steps = <60>;
-    };
     left_encoder: encoder_left {
         compatible = "alps,ec11";
         label = "LEFT_ENCODER";
@@ -27,7 +20,14 @@
         b-gpios = <&pro_micro 20 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
         steps = <60>;
     };
-sensors {
+    right_encoder: encoder_right {
+        compatible = "alps,ec11";
+        label = "RIGHT_ENCODER";
+        a-gpios = <&pro_micro 21 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+        b-gpios = <&pro_micro 20 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+        steps = <60>;
+    };
+    sensors {
         compatible = "zmk,keymap-sensors";
         sensors = <&left_encoder &right_encoder>;
         triggers-per-rotation = <30>;
@@ -1092,7 +1092,7 @@ sensors {
             compatible = "zmk,behavior-sensor-rotate";
             label = "TAB_BROWSER";
             #sensor-binding-cells = <0>;
-            bindings = <&tab_right>, <&tab_left>;
+            bindings = <&tab_left>, <&tab_right>;
         };
 // Tap Dance
         cc: cc {
