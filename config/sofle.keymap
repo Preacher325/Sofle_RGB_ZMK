@@ -1279,7 +1279,7 @@
                                 &trans       &trans        &trans       &trans    &trans            &trans &kp N0          &kp N0       &kp N0        &kp DOT 
             >;
 
-            sensor-bindings = <&inc_dec_kp PG_UP PG_DN &inc_dec_kp C_FAST_FORWARD C_REWIND>;
+            sensor-bindings = <&inc_dec_kp C_FAST_FORWARD C_REWIND &inc_dec_kp PG_UP PG_DN>;
         };
 
         raise_layer {
